@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Anna Kuzechkina](https://up.htmlacademy.ru/htmlcss/28/user/946279).
-* Наставник: `Неизвестно`.
+* Наставник: {Ольга Поликашина} (https://htmlacademy.ru/profile/id890283)
 
 ---
 
