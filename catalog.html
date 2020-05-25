@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Седона, гостиница, отель">
     <meta name="description" content="поиск отеля в городе Седона">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/catalog.css">
     <title>HTML Academy: Седона-поиск отеля</title>
   </head>
 
@@ -23,30 +23,37 @@
 
     <main>
            <section> 
-             <h2>Форма сортировки результатов поиска гостиницы</h2> <!--Будет скрыт стилями-->
-             <form action="https://echo.htmlacademy.ru/">
+             <h2 class="visually-hidden">Форма сортировки результатов поиска гостиницы</h2> <!--Будет скрыт стилями-->
+             <form action="https://echo.htmlacademy.ru/" method="get">
                  <fieldset>
-                     <legend>Инфраструктура:</legend>
-                     <input type="checkbox" checked><label>Бассейн</label>
-                     <input type="checkbox"><label>Парковка</label>
-                     <input type="checkbox"><label>WI-FI</label>
+                  <legend>Инфраструктура:</legend>
+                     <input type="checkbox" name="pool" id="view-pool" checked>
+                     <label for="view-pool">Бассейн</label>
+                     <input type="checkbox" name="parking" id="view-parking">
+                     <label for="view-parking">Парковка</label>
+                     <input type="checkbox" name="wi-fi" id="view-wf">
+                     <label for="view-wf">wi-fi</label> <!--напоминалка себе не забыть сделать большими буквами-->
                  </fieldset>
                  <fieldset>
-                     <legend>Тип жилья:</legend>
-                     <input type="checkbox" checked><label>Гостиница</label>
-                     <input type="checkbox" checked><label>Мотель</label>
-                     <input type="checkbox" checked><label>Апартаменты</label>
+                  <legend>Тип жилья:</legend>
+                     <input type="checkbox" name="hotel" id="view-hotel" checked>
+                     <label for="view-hotel">Гостиница</label>
+                     <input type="checkbox" name="motel" id="view-motel" checked>
+                     <label for="view-motel">Мотель</label>
+                     <input type="checkbox" name="apartments" id="view-apartments" checked>
+                     <label for="view-apartments">Апартаменты</label>
                  </fieldset>
                  <fieldset>
-                     <legend>Стоимость в сутки (Р):</legend>
-                     <input type="range" min="0" max="4000" value="3000">
+                  <legend>Стоимость в сутки (p):</legend> <!--напоминалка себе не забыть сделать большими буквами-->
+                     <input type="range" name="range" id="id-range" min="0" max="4000" value="3000">
                  </fieldset>
-                 <input type="submit" value="Показать">
+                 <button type="submit">Показать</button>  <!-- Или  <input type="submit" value="Показать">-->
              </form>
+
            </section>
            
            <section>
-               <h1>Результаты поиска</h1> <!--будет скрыт стилями-->
+               <h1 class="visually-hidden">Результаты поиска</h1> <!--будет скрыт стилями-->
                <p>Найдено:3</p>
                <p>Сортировка</p>
                <ul> 
@@ -93,7 +100,7 @@
     </main>
 
     <footer>
-      <h2>Контакты</h2> <!--Будет скрыт стилями-->
+      <h2 class="visually-hidden">Контакты</h2> <!--Будет скрыт стилями-->
       <div>
         <p><span>#visitsedona</span></p> <!--просто напоминалка мне не забыть сделать капсом -->
         <a href="tel:+7(495)666-01-66">ТЕЛ: +7(495) 666-01-66</a>
