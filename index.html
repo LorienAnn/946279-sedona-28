@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Седона, туризм, отели">
     <meta name="description" content="описание города Седона">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -88,58 +88,24 @@
         <h2 class="visually-hidden">Форма поиска гостиницы в городе Седона</h2>  <!--Будет скрыт стилями-->
        <p>Заинтересовались?</p>
        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <button>Поиск гостиницы в Седоне</button>  <!--Как я поняла изначально над картой просто кнопка с надписью, при нажатии на которую разворачивается форма поиска?-->
-            <p>
-              <label for="date-arrival">Дата заезда<input type="date" name="arrival" id="date-arrival"></label>
-            </p>
-            <p>
-              <label for="date-departure">Дата выезда<input type="date" name="departure" id="date-departure"></label>
-            </p>
-            <p>
-             <label for="amount-adults">Взрослые</label>
-             <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
-             <label for="amount-children">Дети</label>
-             <input type="number" min="0" max="10" name="children" id="amount-children">
-            </p>
-             <button type="submit">Найти</button> <!--или так <input type="submit" value="Найти"> В демонстрации было через кнопку, а не инпут,
-               а в интерактивных курсах про формы отправка делается через инпут. Как я поняла, <button type="submit" даёт больше свободы, чем <input type="submit" ? -->
-          </fieldset>
-        </form>
-
-       <!--Не будет ли лучше так? Отказаться от <p> и вытащить <input> из <label> 
-
-          <form action="https://echo.htmlacademy.ru" method="get">
-             
-          <button>Поиск гостиницы в Седоне</button> 
-
-          <label for="date-arrival">Дата заезда</label> 
-          <input type="date" name="arrival" id="date-arrival">
-
-          <label for="date-departure">Дата выезда</label>
-          <input type="date" name="departure" id="date-departure">
-
-          <label for="amount-adults">Взрослые</label>
-          <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
-
-          <label for="amount-children">Дети</label>
-          <input type="number" min="0" max="10" name="children" id="amount-children">
-
-          <input type="submit" value="Найти">
-          
-          
-          Была мысль вообще выкинуть id, но, думаю это от моего невежества.
-
-          <form action="https://echo.htmlacademy.ru" method="get">
-             
-             <button>Поиск гостиницы в Седоне</button> 
-             <label>Дата заезда<input type="date" name="arrival"></label> 
-             <label>Дата выезда<input type="date" name="departure"></label>
-             <label>Взрослые</label><input type="number" max="10" name="adults" value="2">
-             <label>Дети</label><input type="number" max="10" name="children">
-             <input type="submit" value="Найти">
-        -->
+       <button>Поиск гостиницы в Седоне</button>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>  
+          <p>
+            <label for="date-arrival">Дата заезда<input type="text" name="arrival" id="date-arrival" value="24 апреля 2017"></label>
+          </p>
+          <p>
+            <label for="date-departure">Дата выезда<input type="text" name="departure" id="date-departure" value="4 июля 2017"></label>
+          </p>
+          <p>
+            <label for="amount-adults">Взрослые</label>
+            <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
+            <label for="amount-children">Дети</label>
+            <input type="number" min="0" max="10" name="children" id="amount-children">
+          </p>
+            <button type="submit">Найти</button> 
+        </fieldset>
+      </form>
 
       </section> 
       <section>
