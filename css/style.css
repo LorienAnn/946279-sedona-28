@@ -1,3 +1,147 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+  --basic-light-gray: #F2F2F2;
+  --basic-gray:  #EEEEEE;
+  --basic-black: #000000;
+  --opacity-black : rgb(0,0,0, 0.3);
+
+  --hover-blue: #669EC0;
+  --hover-brown: #604E43;
+  --hover-gray: #EBEBEB;
+
+  --active-blue: #5496BD;
+  --active-brown: #503E33; 
+
+  /*мелкие иконки: календарь и +/- */
+
+  --basic-icon-gray: #A9A9A9;
+  --hover-icon-black: #000000;
+  --active-icon-blue: #81B3D2;
+  --updown-gray: #CACACA;
+  --logo-gray: #BDBBBC;
+  --checking-gray: #6A6A6A;
+}
+
+
+
+body {
+min-width: 960px;
+margin: 0;
+padding: 0;
+font-family:  "PT Sans", sans-serif;
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+background-color: var(--basic-white);
+color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+font-weight: 700;
+line-height: 26px;
+color: var(--basic-black);
+background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;  
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  color: var(--active-icon-blue)
+}
+.site-navigation a:active {
+color: var(--opacity-black);
+}
+/* :((( */
+.site-navigation a:not([href]) {
+  color: var(--basic-brown);
+}      
+/* не получается сделать четвертый цвет для ссылок на страницу, на которой мы находимся при a:not у меня все пункты окрашиваются, получается во всех 
+href должен быть адрес? пустые href или # не подходят? :( */
+
+/* Advantages */
+
+.advantages {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.advantages-list {
+  list-style: none;
+  
+}
+
+.background-blue {
+  background-color: var(--basic-blue);
+}
+
+.background-gray {
+  background-color: var(--basic-gray);
+}
+
+
+.advantages h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.advantages-list h3,
+.advantages-list h4 {
+  font-size: 21px;
+  line-height: 21px; 
+  
+}
+
+.advantages-list span {
+  font-size: 14px; 
+}
+
+/* Search form*/
+
+.search-form {
+background-color: var(--basic-white);
+text-align: center;
+}
+
+.uppercase {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
