@@ -28,15 +28,15 @@
 
 
 body {
-min-width: 960px;
-margin: 0;
-padding: 0;
-font-family:  "PT Sans", sans-serif;
-font-size: 14px;
-line-height: 21px;
-font-weight: 400;
-background-color: var(--basic-white);
-color: var(--basic-black);
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family:  "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 a {
@@ -48,14 +48,38 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+
+
+ /*****       index        *****/ 
 
 /* Main navigation */
 
+.background-index {
+  background-image: url(../img/background-photo.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome {
+  text-align: center;
+}
+
 .main-navigation {
-font-weight: 700;
-line-height: 26px;
-color: var(--basic-black);
-background-color: transparent;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
 }
 
 .main-navigation-wrapper {
@@ -76,14 +100,13 @@ background-color: transparent;
   color: var(--active-icon-blue)
 }
 .site-navigation a:active {
-color: var(--opacity-black);
+  color: var(--opacity-black);
 }
-/* :((( */
+
 .site-navigation a:not([href]) {
   color: var(--basic-brown);
 }      
-/* не получается сделать четвертый цвет для ссылок на страницу, на которой мы находимся при a:not у меня все пункты окрашиваются, получается во всех 
-href должен быть адрес? пустые href или # не подходят? :( */
+
 
 /* Advantages */
 
@@ -131,14 +154,14 @@ href должен быть адрес? пустые href или # не подх�
 /* Search form*/
 
 .search-form {
-background-color: var(--basic-white);
-text-align: center;
-font-size: 14px;
-line-height: 26px;
-text-transform: uppercase;
+  background-color: var(--basic-white);
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
- form fieldset {
+  .fieldset {
   border:none;
 }
 .uppercase {
@@ -149,25 +172,25 @@ text-transform: uppercase;
 
 .button-brown {
   background-color: var(--basic-brown);
-  color: white;
+  color: var(--basic-white);
   font-size: 21px;
   line-height: 26px;
   vertical-align: middle;
   border: none;
 }
 
-.botton-brown:hover,
-.botton-brown:focus {
+.button-brown:hover,
+.button-brown:focus {
   background-color: var(--hover-brown);
 }
 
-/*Не вижу разницы между наведением и покоем :(  */
+                   /*   Не вижу разницы между наведением и покоем :(  */
 
 .button-brown:active {
   background-color: var(--active-brown);
 } 
 
-form input {
+.fieldset input {
   background-color: var(--basic-light-gray);
   border: none;
 }
@@ -185,7 +208,7 @@ form input:focus {
   background-color: var(--basic-blue);
   border: none;
   text-align: center;         
-  vertical-align: middle;   /* я не вижу разницы с vertical-align и без него */
+  vertical-align: middle;   /* я не вижу разницы с vertical-align и без него, а в  */
   color: var(--basic-white);
 }
 
@@ -221,13 +244,50 @@ form input:focus {
   font-weight: 400;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+/*****     catalog       *****/
+
+.background-catalog {
+  background-image: url(../img/background-blur.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.form-sorting fieldset {
+  background-color: transparent;
+  border: none;
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.form-sorting legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.form-sorting button {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+}
+.results ul {
+  list-style: none;
+}
+
+.results ul a {
+  color: var(--opacity-black);
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.results ul a:hover {
+  color: var(--basic-blue);
+}
+
+.results ul a:active {
+  color: var(--basic-black);
+  border: none;
+}
