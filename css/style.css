@@ -23,6 +23,7 @@
   --updown-gray: #CACACA;
   --logo-gray: #BDBBBC;
   --checking-gray: #6A6A6A;
+  --booking-brown: #666666;
 }
 
 
@@ -161,7 +162,7 @@ img {
   text-transform: uppercase;
 }
 
-  .fieldset {
+.fieldset {
   border:none;
 }
 .uppercase {
@@ -276,18 +277,78 @@ form input:focus {
   list-style: none;
 }
 
-.results ul a {
+.found {
+  color: var(--basic-black);
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.results p {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.rotation a{
   color: var(--opacity-black);
   font-size: 12px;
   line-height: 18px;
   border-bottom: 1px dashed var(--basic-blue);
 }
 
-.results ul a:hover {
+.rotation a:hover {
   color: var(--basic-blue);
 }
 
-.results ul a:active {
+.rotation a:active {
   color: var(--basic-black);
   border: none;
+}
+
+.results .hotels a,
+.results .hotels button,
+.results .hotels span {
+  font-size: 14px;             
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.results .hotels a {
+  font-weight: 700;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  border: none;
+}
+
+.results .hotels button {
+  font-weight: 700;
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  border: none;
+  
+}
+
+.results span {
+  color: var(--booking-brown);
+  background-color: var(--basic-light-gray);
+
+}
+
+/* hotels*/
+
+.hotels h2 {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.hotels p {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }

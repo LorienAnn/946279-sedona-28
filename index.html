@@ -107,7 +107,8 @@
                 <label>Дата выезда<input type="text" name="departure" value="4 июля 2017"></label>
               </p>
               <p>
-                <label for="amount-adults">Взрослые</label>
+                <label for="amount-adults">Взрослые</label>       <!--VoiceOver не читает к чему относятся счетчики, а сразу начинает говорить про цифры и в счетчике детей тоже-->
+              </section>   
                 <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
                 <label for="amount-children">Дети</label>
                 <input type="number" min="0" max="10" name="children" id="amount-children">
@@ -118,7 +119,7 @@
 
       </section> 
       <section>
-       <img src="img/map.jpg" width="1199" height="594" alt="карта местности">
+       <img src="img/map.jpg" width="1199" height="594" alt="карта местности">  <!--VoiceOver почему-то не прочитывает альтернативный текст у изображения карты -->
       </section>   
       </main>
 
@@ -131,9 +132,9 @@
           </div>
           <div class="links">
             <ul class="navigation">
-              <li><a href=""><span class="visually-hidden">ссылка на твиттер</span></a></li>
-              <li><a href=""><span class="visually-hidden">ссылка на фейсбук</span></a></li>
-              <li><a href=""><span class="visually-hidden">ссылка на ютуб</span></a></li>
+              <li><a href=""><div class="visually-hidden">ссылка на твиттер</div></a></li>
+              <li><a href=""><div class="visually-hidden">ссылка на фейсбук</div></a></li>
+              <li><a href=""><div class="visually-hidden">ссылка на ютуб</div></a></li>
             </ul>
           </div>
           <div class="link-academy">
