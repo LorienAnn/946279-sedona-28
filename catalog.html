@@ -14,7 +14,7 @@
     <header>
         <nav class="main-navigation">
           <div class="main-navigation-wrapper">
-            <ul class="site-navigation">
+            <ul class="navigation site-navigation">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
@@ -27,7 +27,7 @@
 
     <main>
            <section> 
-             <h2 class="visually-hidden">Форма сортировки результатов поиска гостиницы</h2> <!--Будет скрыт стилями-->
+             <h2 class="visually-hidden">Форма сортировки результатов поиска гостиницы</h2> 
              <form action="https://echo.htmlacademy.ru/" method="get">
                  <fieldset>
                   <legend>Инфраструктура:</legend>
@@ -36,7 +36,7 @@
                      <input type="checkbox" name="parking" id="view-parking">
                      <label for="view-parking">Парковка</label>
                      <input type="checkbox" name="wi-fi" id="view-wf">
-                     <label for="view-wf">wi-fi</label> <!--напоминалка себе не забыть сделать большими буквами-->
+                     <label for="view-wf">wi-fi</label> 
                  </fieldset>
                  <fieldset>
                   <legend>Тип жилья:</legend>
@@ -48,16 +48,16 @@
                      <label for="view-apartments">Апартаменты</label>
                  </fieldset>
                  <fieldset>
-                  <legend>Стоимость в сутки (p):</legend> <!--напоминалка себе не забыть сделать большими буквами-->
+                  <legend>Стоимость в сутки (p):</legend> 
                      <input type="range" name="range" id="id-range" min="0" max="4000" value="3000"> <!--Переделаю после нужной лекции-->
                  </fieldset>
-                 <button type="submit">Показать</button>  <!-- Или  <input type="submit" value="Показать">-->
+                 <button type="submit">Показать</button>  
              </form>
 
            </section>
            
            <section>
-               <h1 class="visually-hidden">Результаты поиска</h1> <!--будет скрыт стилями-->
+               <h1 class="visually-hidden">Результаты поиска</h1> 
                <p>Найдено:3</p>
                <p>Сортировка</p>
                <ul> 
@@ -104,25 +104,28 @@
     </main>
 
     <footer>
-      <h2 class="visually-hidden">Контакты</h2> <!--Будет скрыт стилями-->
-      <div>
-        <p><span>#visitsedona</span></p> <!--просто напоминалка мне не забыть сделать капсом -->
-        <a href="tel:+7(495)666-01-66">ТЕЛ: +7(495) 666-01-66</a>
-      </div>
-      <div>
-        <ul>
-          <li><a href="">Тут будет твиттер</a></li>
-          <li><a href="">Тут будет фейсбук</a></li>
-          <li><a href="">Тут будет ютуб</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>
-         Website by
-         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="113.98" height="39.78" alt="логотип академии"></a>
-        </p>
+      <div class="footer">
+       <h2 class="visually-hidden">Контакты</h2> 
+        <div class="contacts">
+          <p><span>#visitsedona</span></p> 
+          <a href="tel:+7(495)666-01-66">ТЕЛ: +7(495) 666-01-66</a>
+        </div>
+        <div class="links">
+          <ul class="navigation">
+            <li><a href="">Тут будет твиттер</a></li>
+            <li><a href="">Тут будет фейсбук</a></li>
+            <li><a href="">Тут будет ютуб</a></li>
+          </ul>
+        </div>
+        <div class="link-academy">
+          <p>
+            Website by
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="113.98" height="39.78" alt="логотип академии"></a>
+          </p>
+        </div>
       </div>
     </footer>
+
 
   </body>
 

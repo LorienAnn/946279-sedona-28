@@ -6,6 +6,7 @@
   --basic-gray:  #EEEEEE;
   --basic-black: #000000;
   --opacity-black : rgb(0,0,0, 0.3);
+  --opacity-white: rgb(255,255,255, 0.9);
 
   --hover-blue: #669EC0;
   --hover-brown: #604E43;
@@ -61,7 +62,7 @@ background-color: transparent;
   background-color: var(--basic-white);
 }
 
-.site-navigation {
+.navigation {
   list-style: none;  
 }
 
@@ -70,7 +71,8 @@ background-color: transparent;
   text-transform: uppercase;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: var(--active-icon-blue)
 }
 .site-navigation a:active {
@@ -131,16 +133,93 @@ href должен быть адрес? пустые href или # не подх�
 .search-form {
 background-color: var(--basic-white);
 text-align: center;
+font-size: 14px;
+line-height: 26px;
+text-transform: uppercase;
 }
 
+ form fieldset {
+  border:none;
+}
 .uppercase {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
+.button-brown {
+  background-color: var(--basic-brown);
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  vertical-align: middle;
+  border: none;
+}
 
+.botton-brown:hover,
+.botton-brown:focus {
+  background-color: var(--hover-brown);
+}
+
+/*Не вижу разницы между наведением и покоем :(  */
+
+.button-brown:active {
+  background-color: var(--active-brown);
+} 
+
+form input {
+  background-color: var(--basic-light-gray);
+  border: none;
+}
+
+form input:hover {
+  background-color: var(--hover-gray);
+}
+
+form input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+}
+
+.search {
+  background-color: var(--basic-blue);
+  border: none;
+  text-align: center;         
+  vertical-align: middle;   /* я не вижу разницы с vertical-align и без него */
+  color: var(--basic-white);
+}
+
+.search:hover {
+  background-color: var(--hover-blue);
+}
+
+.search:active {
+  background-color: var(--active-blue);
+}
+
+/*   footer   */
+
+.footer {
+  background-color: var(--opacity-white);
+  color: var(--basic-black);
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  
+}
+
+.footer a {
+  color: var(--basic-black);
+}
+
+.links {
+  text-align: center;
+}
+
+.link-academy {
+  font-weight: 400;
+}
 
 .visually-hidden {
     position: absolute;
