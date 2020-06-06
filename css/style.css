@@ -27,7 +27,6 @@
 }
 
 
-
 body {
   min-width: 960px;
   margin: 0;
@@ -61,21 +60,15 @@ img {
   overflow: hidden;
   }
 
-
  /*****       index        *****/ 
 
 /* Main navigation */
-
-
-
 
 .welcome {
   text-align: center;
   margin: auto;
   padding-top: 77.35px;
 }
-
-
 
 .main-navigation {
   background-color: var(--basic-white);
@@ -87,14 +80,14 @@ img {
 }
 
 .main-navigation-wrapper {
-display: flex;
-flex-direction: column;
-align-items: center;
-position: relative;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
 }
 
- .logo {
+.logo {
   background-color: blueviolet;
   order: -1;
   position: absolute;
@@ -109,15 +102,11 @@ flex-wrap: wrap;
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  
-  
 }
 
 .navigation {
   list-style: none;  
 }
-
-
 
 .site-navigation a {
   color: var(--basic-black);
@@ -138,6 +127,7 @@ flex-wrap: wrap;
 .site-navigation a:focus {
   color: var(--active-icon-blue)
 }
+
 .site-navigation a:active {
   color: var(--opacity-black);
 }
@@ -166,7 +156,6 @@ flex-wrap: wrap;
 
 .advantages-list {
   list-style: none;
-  
 }
 
 .background-blue {
@@ -176,7 +165,6 @@ flex-wrap: wrap;
 .background-gray {
   background-color: var(--basic-gray);
 }
-
 
 .advantages h2 {
   font-size: 21px;
@@ -212,6 +200,7 @@ flex-wrap: wrap;
 .fieldset {
   border:none;
 }
+
 .uppercase {
   font-size: 30px;
   line-height: 24px;
@@ -232,8 +221,6 @@ flex-wrap: wrap;
   background-color: var(--hover-brown);
 }
 
-  
-
 .button-brown:active {
   background-color: var(--active-brown);
 } 
@@ -251,8 +238,6 @@ form input:focus {
   background-color: var(--basic-white);
   border: 2px solid #E5E5E5;
 }
-
-
 
 .search {
   background-color: var(--basic-blue);
@@ -279,7 +264,6 @@ form input:focus {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  
 }
 
 .footer a {
@@ -302,7 +286,6 @@ form input:focus {
   background-repeat: no-repeat;
   max-width: 100%;
   height: auto;
-
 }
 
 .form-sorting fieldset {
@@ -322,6 +305,7 @@ form input:focus {
   background-color: transparent;
   border: 2px solid #FFFFFF;
 }
+
 .results ul {
   list-style: none;
 }
@@ -382,13 +366,11 @@ form input:focus {
   background-color: var(--basic-brown);
   color: var(--basic-white);
   border: none;
-  
 }
 
 .results span {
   color: var(--booking-brown);
   background-color: var(--basic-light-gray);
-
 }
 
 /* hotels*/
