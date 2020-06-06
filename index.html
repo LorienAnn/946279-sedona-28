@@ -15,7 +15,7 @@
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
           <ul class="navigation site-navigation">
-              <li><a href="#">Информация</a></li>
+              <li><a href="#">Информация</a></li>         <!--мысль разбить меню на два дива-->
               <li><a href="#">Фото и видео</a></li>
               <li><a href="#">Карта штата</a></li>
               <li><a href="#">Гостиницы</a></li>
@@ -25,13 +25,13 @@
       </nav>
       </header>
 
-      <main>
-        <div class="photo-index">
-        <section class="welcome">
+      <main class="main-index">
+        
+        <section class="welcome photo-index">
           <img src="img/intro-welcome.svg" width="456.65" height="350.88" alt="Welcome to the Gorgeous"> 
           <h1 class="visually-hidden">Добро пожаловать в город Седона!</h1> 
         </section>
-        </div> 
+        
         <section class="advantages">
           <h2>Седона-небольшой городок в Аризоне,
           заслуживающий большего!</h2> 
@@ -108,8 +108,8 @@
                 <label>Дата выезда<input type="text" name="departure" value="4 июля 2017"></label>
               </p>
               <p>
-                <label for="amount-adults">Взрослые</label>       <!--VoiceOver не читает к чему относятся счетчики, а сразу начинает говорить про цифры и в счетчике детей тоже-->
-              </section>   
+                <label for="amount-adults">Взрослые</label>      
+                
                 <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
                 <label for="amount-children">Дети</label>
                 <input type="number" min="0" max="10" name="children" id="amount-children">
@@ -117,10 +117,9 @@
               <button type="submit" class="search">Найти</button> 
             </fieldset>
           </form>
-
-      </section> 
+        </section> 
       <section>
-       <img src="img/map.jpg" width="1199" height="594" alt="карта местности">  <!--VoiceOver почему-то не прочитывает альтернативный текст у изображения карты -->
+       <img src="img/map.jpg" width="1199" height="594" alt="карта местности">  
       </section>   
       </main>
 
@@ -133,9 +132,9 @@
           </div>
           <div class="links">
             <ul class="navigation">
-              <li><a href=""><div class="visually-hidden">ссылка на твиттер</div></a></li>
-              <li><a href=""><div class="visually-hidden">ссылка на фейсбук</div></a></li>
-              <li><a href=""><div class="visually-hidden">ссылка на ютуб</div></a></li>
+              <li><a href="" aria-label="ссылка на твиттер"></a></li>
+              <li><a href="" aria-label="ссылка на фейсбук"></a></li>
+              <li><a href="" aria-label="ссылка на ютуб"></a></li>
             </ul>
           </div>
           <div class="link-academy">
