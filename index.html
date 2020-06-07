@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Седона, туризм, отели">
@@ -10,10 +10,10 @@
     <title>HTML Academy: Седона</title>
   </head>
 
-  <body>
+  <body class="page-body">
       <header>
       <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
+        
           <ul class="navigation site-navigation">
               <li><a href="#">Информация</a></li>         <!--мысль разбить меню на два дива-->
               <li><a href="#">Фото и видео</a></li>
@@ -33,30 +33,37 @@
         </section>
         
         <section class="advantages">
-          <h2>Седона-небольшой городок в Аризоне,
-          заслуживающий большего!</h2> 
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="intro">
+            <h2>Седона-небольшой городок в Аризоне,
+            заслуживающий большего!</h2> 
+           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>  
           <ul class="advantages-list">
             <li>
-              <div class="background-blue">
-                <h3>Настоящий городок</h3>
-                <span>№1</span>
-                <p>Седона - не аттракцион для туристов, там
-                течёт своя жизнь</p>
+              <div class="reason-1 ">
+                <div class="true-city">
+                  <h3>Настоящий городок</h3>
+                  <span>№1</span>
+                  <p>Седона - не аттракцион для туристов, там
+                  течёт своя жизнь</p>
+                </div>  
                 <img src="img/sedona.jpg" width="800" height="256" alt="Фото Седоны">
               </div>
-              <ul class="advantages-list">
+              <ul class="city">
                 <li>
+                  <img src="img/icon-1.svg">
                   <h4>Жильё</h4>
                   <p>Рекомендуем пожить в настоящем 
                   мотеле, всё как в кино!</p>
                 </li>
                 <li>
+                  <img src="img/icon-2.svg">
                   <h4>Еда</h4>
                   <p>Всегда заказывайте фирменный бургер, 
                   вы не разочаруетесь!</p>
                 </li>
                 <li>
+                  <img src="img/icon-3.svg">
                   <h4>Сувениры</h4>
                   <p>Не только китайского, но и местного
                   производства!</p>
@@ -64,15 +71,17 @@
               </ul>
             </li>
             <li>
-              <div class="background-blue">
-                <h3>Там есть мост дьявола</h3>
-                <span>№2</span>
-                <p>Да, по нему можно пройти! Если конечно
-                вы осмелитесь</p>
+              <div class="reason-2">
+                <div class="bridge">
+                  <h3>Там есть мост дьявола</h3>
+                  <span>№2</span>
+                  <p>Да, по нему можно пройти! Если конечно
+                  вы осмелитесь</p>
+                </div> 
                 <img src="img/nature.jpg" width="800" height="256" alt="Окрестности Седоны">
               </div>
             </li>
-            <div class="background-gray">
+            <div class="reason-345">
               <li>
                 <h3>Небольшая площадь</h3>
                 <span>№3</span>
