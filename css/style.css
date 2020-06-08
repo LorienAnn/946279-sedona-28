@@ -337,7 +337,7 @@ ul.site-navigation li:last-child {
 .bridge p {
   margin: 0;
   margin-top: 23px;
-  width: 301px;
+  width: 320px;
   height: 43px;
 
 }
@@ -354,16 +354,19 @@ ul.reason-345 {
 .reason-345 li:nth-child(3n+1) {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 207px;
   height: 155px;
   margin-top: 47px;
   margin-left: 96px;
   margin-bottom: 54px;
+  background-color: orangered;
 }
 
 .reason-345 li:nth-child(3n+2) {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 47px;
   width: 258px;
   margin-left: 168px;
@@ -373,16 +376,20 @@ ul.reason-345 {
 .reason-345 li:nth-child(3n+3) {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 47px;
   margin-right: 77px;
   width: 246px;
 }
+
 .reason-345 p{
 width: 250px;
 height: 43px;
 padding: 0;
-display: inline-block;
-background-color: olivedrab;
+
+}
+.reason-345 h3 {
+  width: 119px;
 }
 .advantages-list h3,
 .advantages-list h4,
