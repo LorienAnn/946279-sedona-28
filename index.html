@@ -108,33 +108,36 @@
             </div>
           </ul>
         </section>
+        <div class="search-map">
         <section class="search-form">
           <h2 class="visually-hidden">Форма поиска гостиницы в городе Седона</h2>  
           <p class="uppercase">Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button-brown">Поиск гостиницы в Седоне</button>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="fieldset">  
-              <p>
-                <label>Дата заезда<input type="text" name="arrival" value="24 апреля 2017"></label>
-              </p>
-              <p>
-                <label>Дата выезда<input type="text" name="departure" value="4 июля 2017"></label>
-              </p>
-              <p>
-                <label for="amount-adults">Взрослые</label>      
-                
-                <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
-                <label for="amount-children">Дети</label>
-                <input type="number" min="0" max="10" name="children" id="amount-children">
-              </p>
-              <button type="submit" class="search">Найти</button> 
-            </fieldset>
-          </form>
+          <div class="window">
+            <button class="button-brown">Поиск гостиницы в Седоне</button>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="fieldset">  
+                <p>
+                  <label>Дата заезда<input type="text" name="arrival" value="24 апреля 2017"></label>
+                </p>
+                <p>
+                  <label>Дата выезда<input type="text" name="departure" value="4 июля 2017"></label>
+                </p>
+                <p>
+                  <label for="amount-adults">Взрослые</label>      
+                  <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
+                  <label for="amount-children">Дети</label>
+                  <input type="number" min="0" max="10" name="children" id="amount-children">
+                </p>
+                <button type="submit" class="search">Найти</button> 
+              </fieldset>
+            </form>
+          </div> 
         </section> 
       <section>
        <img src="img/map.jpg" width="1199" height="594" alt="карта местности">  
-      </section>   
+      </section>
+      </div>     
       </main>
 
       <footer>

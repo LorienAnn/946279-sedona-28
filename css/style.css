@@ -178,7 +178,6 @@ ul.site-navigation li:last-child {
   background-color: var(--basic-white);
   margin-left: auto;
   margin-right: auto;
-  background-color: grey;
   width: 1200px;
   text-align: center;
 }
@@ -194,7 +193,6 @@ ul.site-navigation li:last-child {
   margin-left: auto;                   /*пока не получилось то же выравнивание букв сделать*/
   margin-right: auto;
   margin-top: 42.5px;
-  background-color: fuchsia;
   width: 470px;
   height: 80px;
 }
@@ -359,7 +357,9 @@ ul.site-navigation li:last-child {
   height: 155px;
   margin-top: 47px;
   margin-left: 96px;
+  margin-bottom: 54px;
 }
+
 
 .advantages-list h3,
 .advantages-list h4 {
@@ -373,12 +373,37 @@ ul.site-navigation li:last-child {
 
 /* Search form*/
 
+.search-map {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 58px;
+  background-color: red;
+}
+
 .search-form {
   background-color: var(--basic-white);
   text-align: center;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  width: 568px;
+  height: 628px;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  margin-left: 316px;
+  margin-right: 316px;
+  background-color: rebeccapurple;
+  margin-bottom: 78px;
+}
+
+.window {
+  background-color: springgreen;
+  height: 395;
+  margin: 0;
+  padding: 0;
 }
 
 .fieldset {
@@ -441,6 +466,10 @@ form input:focus {
 
 /*   footer   */
 
+.footer a {
+  color: var(--basic-black);
+}
+
 .footer {
   background-color: var(--opacity-white);
   color: var(--basic-black);
@@ -448,14 +477,46 @@ form input:focus {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  height: 120px;
+  z-index: 3;
+  position: absolute;
+}
+ .contacts {
+  width: 251px;
+  height: 61px;
+  margin-top: 23px;
+  margin-left: 111px;
+  margin-bottom: 36px;
+  text-align: center;
+  padding: 0;
 }
 
-.footer a {
-  color: var(--basic-black);
+.contacts p {
+  height: 26px;
+  margin: 0;
+}
+
+.contacts a {
+  margin-top: 9px;
 }
 
 .links {
   text-align: center;
+  width: 150px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  background-color: var(--basic-brown);
+
+}
+
+.links li:first-child {
+  background-image: url(../img/twitter.svg);
+ 
 }
 
 .link-academy {
