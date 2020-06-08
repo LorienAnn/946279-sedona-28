@@ -38,8 +38,9 @@
   }
 
 body {
-  min-width: 960px;
-  margin: 0;
+  min-height: 100vh;
+  width: 1280px;
+  margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
   font-family: "PT Sans", sans-serif;
@@ -48,8 +49,7 @@ body {
   font-weight: 400;
   background-color: var(--basic-white);
   color: var(--basic-black);
-  width: 1280px;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 a {
@@ -61,15 +61,13 @@ img {
   height: auto;
 }
 
-.page {
-  height: 100%;
-}
 
-.page-body {
+
+/*.page-body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  align-content: start;*/
 
 }
 
@@ -81,19 +79,17 @@ img {
   background-color: var(--basic-white);
   margin: auto;
   color: var(--basic-black);
-  width: 1200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  flex-wrap: wrap; 
 }
 
 .logo {
-  order: -1;
-  position: absolute;
-  align-self: center;
+  position: absolute;              /*Теперь лого отвалился :D */
   z-index: 2;
+  background-color: navy;
 }
 
 .navigation {
@@ -105,12 +101,16 @@ ul.site-navigation {
   flex-wrap: wrap;
   align-items: center;
   width: 1200px;
-  height: 56px;
+  min-height: 56px;
   margin: 0;
   padding: 0;
 }
 
-ul.site-navigation li:first-child {                                            
+ul.site-navigation li {
+  width: 98px;
+}
+
+ul.site-navigation li:nth-child(4n+1) {                                            
   margin-left: 72px; 
 }
 
@@ -152,7 +152,6 @@ ul.site-navigation li:last-child {
 .welcome {
   text-align: center;
   margin: auto;
-  padding-top: 77.35px;
 }
 
 .welcome img {
@@ -166,7 +165,6 @@ ul.site-navigation li:last-child {
   background-repeat: no-repeat;
   max-width: 100%;
   height: 509px;
-  z-index: 3;
   padding: 0;
 }
 
@@ -178,7 +176,6 @@ ul.site-navigation li:last-child {
   background-color: var(--basic-white);
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   text-align: center;
 }
 
@@ -207,6 +204,7 @@ ul.site-navigation li:last-child {
 .advantages-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .reason-1 {
@@ -224,7 +222,7 @@ ul.site-navigation li:last-child {
 }
 
 .true-city p {
-  width: 296px;         /* Всеравно не выравнивается текст так, как надо*/
+  width: 310px;         /* Всеравно не выравнивается текст так, как надо*/
   height: 43px;
   margin-top: 23px;
 }
@@ -327,8 +325,8 @@ ul.site-navigation li:last-child {
 }
 
 .bridge h3 {
-  margin: 0;               /* Тут всё плохо, не могу найти ошибку, почему текст становится в 3 строки*/
-  width: 149px;               
+  margin: 0;               /* СДЕЛАЛА БОЛЬШЕ ШИРИНУ, ТПЕРЬ 2 СТРОКИ НО НУЖНОЕ СЛОВО НЕ ПЕРЕНЕСИТСЯ, КАКУЮ БЫ НЕ СТАВИЛА ШИРИНУ (мб тут допустим br?)*/
+  width: 160px;               
   height: 43px;
 }
 
@@ -343,14 +341,17 @@ ul.site-navigation li:last-child {
   height: 43px;
 
 }
-.reason-345 {
+ul.reason-345 {
   background-color: var(--basic-gray);
-  display: flex;
+  display: flex;                            /*Весь этот блок еще в процессе*/
   height: 256px;
   justify-content: baseline;
+  list-style: none;
+  margin-top: 0;
 }
 
-.reason-345 li:first-child {
+
+.reason-345 li:nth-child(3n+1) {
   display: flex;
   flex-direction: column;
   width: 207px;
@@ -360,14 +361,38 @@ ul.site-navigation li:last-child {
   margin-bottom: 54px;
 }
 
+.reason-345 li:nth-child(3n+2) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 47px;
+  width: 258px;
+  margin-left: 168px;
+  margin-right: 148px;
+}
 
+.reason-345 li:nth-child(3n+3) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 47px;
+  margin-right: 77px;
+  width: 246px;
+}
+.reason-345 p{
+width: 250px;
+height: 43px;
+padding: 0;
+display: inline-block;
+background-color: olivedrab;
+}
 .advantages-list h3,
-.advantages-list h4 {
+.advantages-list h4,
+.reason-345 h3 {
   font-size: 21px;
   line-height: 21px; 
 }
 
-.advantages-list span {
+.advantages-list span,
+.reason-345 span {
   font-size: 14px; 
 }
 
