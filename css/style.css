@@ -26,21 +26,22 @@
   --booking-brown: #666666;
 }
 
-.page {
-  height: 100%;
-}
-
-.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
 
 body {
   min-width: 960px;
   margin: 0;
-  padding: 0;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -48,6 +49,7 @@ body {
   background-color: var(--basic-white);
   color: var(--basic-black);
   width: 1280px;
+  box-sizing: border-box;
 }
 
 a {
@@ -59,17 +61,17 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  }
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+}
 
  /*****       index        *****/ 
 
@@ -86,7 +88,6 @@ img {
   position: relative;
   flex-wrap: wrap; 
 }
-
 
 .logo {
   order: -1;
@@ -109,22 +110,21 @@ ul.site-navigation {
   padding: 0;
 }
 
-ul.site-navigation li:first-child {             /*НЕ ВЫРАВНИВАЕТСЯ :(((((((((( Я не понимаю где ошибка */
-  margin-left: 72px;
-  background-color: floralwhite;          
+ul.site-navigation li:first-child {                                            
+  margin-left: 72px; 
 }
 
-ul.site-navigation li:nth-child(2) {            /*НЕ ВЫРАВНИВАЕТСЯ :(((((((((( Я не понимаю где ошибка */
+ul.site-navigation li:nth-child(2) {                                
   margin: auto;
   margin-left: 134px;
 }
 
-ul.site-navigation li:nth-child(3) {            /*НЕ ВЫРАВНИВАЕТСЯ :(((((((((( Я не понимаю где ошибка */
+ul.site-navigation li:nth-child(3) {                                
   margin: auto;
+  margin-right: 147px;
 }
 
-ul.site-navigation li:last-child {             /*НЕ ВЫРАВНИВАЕТСЯ :(((((((((( Я не понимаю где ошибка */
-  background-color: floralwhite;
+ul.site-navigation li:last-child {                 
   margin-right: 72px;
 }
 
@@ -132,8 +132,7 @@ ul.site-navigation li:last-child {             /*НЕ ВЫРАВНИВАЕТСЯ
   color: var(--basic-black);
   text-transform: uppercase;
   font-weight: 700;               
-  line-height: 26px;
-  padding: 15px 15px;
+  line-height: 26px;                   
   height: 26px;
 }
 
@@ -186,6 +185,7 @@ ul.site-navigation li:last-child {             /*НЕ ВЫРАВНИВАЕТСЯ
 
 .intro {
   text-align: center;
+  margin: 0;
 }
 
 .advantages h2 {
@@ -199,7 +199,7 @@ ul.site-navigation li:last-child {             /*НЕ ВЫРАВНИВАЕТСЯ
   height: 80px;
 }
 
-.advantages p {
+.intro p {
   font-size: 14px;
   line-height: 26px;
   margin-top: 16.5px;
@@ -214,49 +214,102 @@ ul.site-navigation li:last-child {             /*НЕ ВЫРАВНИВАЕТСЯ
 .reason-1 {
   background-color: var(--basic-blue);
   display: flex;
-  background-color: yellowgreen;
 }
 
 .true-city {
  display: flex;
  flex-direction: column;
  align-items: center;
- padding-left: 52px;
- padding-right: 52px;
- padding-top: 47px;
- 
+ margin-right: 52px;
+ margin-left: 52px;
+ color: var(--basic-white);
 }
 
 .true-city p {
   width: 296px;         /* Всеравно не выравнивается текст так, как надо*/
   height: 43px;
+  margin-top: 23px;
+}
+
+.true-city span {
+  margin-top: 25px;
+}
+
+.true-city h3 {
+  margin: 0;
+  margin-top: 47px;
+  width: 122px;
 }
 
 .city {
   list-style: none;
   display: flex;
-  background-color: hotpink;
   height: 330px;
   align-items: center;
+  padding: 0;
 }
 
-.city li:first-child {
-margin-top: 60px;
-width: 254px;
-margin-left: 73px;
+.city p {
+  margin: 0;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  height: 42px;
 }
 
-.city li:nth-child(2) {
-  margin-top: 61px;
+.housing  {                              /* .housing и всё, что внутри, как-то очень много стилей, но по-другому у меня не выравнивается текст :( */
+  width: 254px;
+  height: 188px;
+  margin-top: 60px;                              
+  margin-bottom: 82px;
+  margin-left: 73px;
+  display: flex;
+  flex-direction: column;
+}
+
+.housing h4 {
+  margin: 0;
+  margin-top: 28px;
+}
+
+.food {
   width: 297px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 187px;
+  margin-top: 61px;
+  margin-bottom: 82px;
+  margin-left: 124px;
+  display: flex;
+  flex-direction: column;
 }
 
-.city li:last-child {
-  margin-top: 55px;
+.food h4 {
+  margin:0 ;
+  margin-top: 29px;
+}
+ 
+.souvenirs {
   width: 269px;
-  margin-right: 65px;
+  height: 194px;
+  margin-top: 55px;
+  margin-bottom: 81px;
+  margin-left: 118px;
+  display: flex;
+  flex-direction: column;
+}
+
+.souvenirs h4 {
+  margin: 0;
+  margin-top: 28px;
+}
+
+.souvenirs p {           /*что бы я ни делала не выравнивается :(((*/
+  width: 269px;
+  height: 43px;                            
+  margin: 0;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
 }
 
 .reason-2 {
@@ -265,28 +318,53 @@ margin-left: 73px;
   flex-direction: row-reverse;
 }
 
-.reason-2 .bridge {
+ .bridge {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--basic-white);
+  margin-left: 50px;
+  margin-right: 49px;
   margin-top: 50px;
 }
 
+.bridge h3 {
+  margin: 0;               /* Тут всё плохо, не могу найти ошибку, почему текст становится в 3 строки*/
+  width: 149px;               
+  height: 43px;
+}
+
+.bridge span {
+  margin-top: 25px;
+}
+
+.bridge p {
+  margin: 0;
+  margin-top: 23px;
+  width: 301px;
+  height: 43px;
+
+}
 .reason-345 {
   background-color: var(--basic-gray);
   display: flex;
   height: 256px;
+  justify-content: baseline;
 }
 
-
-
-
+.reason-345 li:first-child {
+  display: flex;
+  flex-direction: column;
+  width: 207px;
+  height: 155px;
+  margin-top: 47px;
+  margin-left: 96px;
+}
 
 .advantages-list h3,
 .advantages-list h4 {
   font-size: 21px;
   line-height: 21px; 
-  
 }
 
 .advantages-list span {
@@ -449,7 +527,7 @@ form input:focus {
 
  .hotels a,
  .hotels button,
- .hotels span {
+ .hotels span   {
   font-size: 14px;             
   line-height: 21px;
   text-transform: uppercase;
@@ -497,6 +575,13 @@ form input:focus {
 
 
 
+/* SOS
 
+-В пиксельперфект всё криво и вся страница съезжает. Всё перепроверила в body, всёравно съезжает
+-как-то слишком много стилей, особенно в списках или это нормально? Может, как вариант, доделать как доделывается, а потом 
+попытаться оптимизировать и удалить всё лишнее? Хотя, по идее лучше сразу не плодить лишнее, но я пытаюсь что-нибудь убрать (в тех же списках) и всё совсем плывёт
+-Весь текст- uppercase - может его можно вынести в :root ?
+-Проблема с шрифтами - "тире", № - не такие как на макете
+*/
 
 
