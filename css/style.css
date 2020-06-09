@@ -61,16 +61,6 @@ img {
   height: auto;
 }
 
-
-
-/*.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;*/
-
-}
-
  /*****       index        *****/ 
 
 /* Main navigation */
@@ -87,9 +77,8 @@ img {
 }
 
 .logo {
-  position: absolute;              /*Теперь лого отвалился :D */
+  position: absolute;              
   z-index: 2;
-  background-color: navy;
 }
 
 .navigation {
@@ -204,12 +193,14 @@ ul.site-navigation li:last-child {
 .advantages-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  
 }
 
 .reason-1 {
   background-color: var(--basic-blue);
-  display: flex;
+  display:flex;
+  background-color: palegreen;
+  margin: auto;
 }
 
 .true-city {
@@ -219,10 +210,11 @@ ul.site-navigation li:last-child {
  margin-right: 52px;
  margin-left: 52px;
  color: var(--basic-white);
+ background-color: orchid;
 }
 
 .true-city p {
-  width: 310px;         /* Всеравно не выравнивается текст так, как надо*/
+  width: 310px;         
   height: 43px;
   margin-top: 23px;
 }
@@ -243,6 +235,7 @@ ul.site-navigation li:last-child {
   height: 330px;
   align-items: center;
   padding: 0;
+  background-color: plum;
 }
 
 .city p {
@@ -299,13 +292,12 @@ ul.site-navigation li:last-child {
 }
 
 .souvenirs p {           /*что бы я ни делала не выравнивается :(((*/
-  width: 269px;
+  width: 280px;
   height: 43px;                            
-  margin: 0;
   margin-top: 25px;
   font-size: 14px;
   line-height: 21px;
-  padding: 0;
+  
 }
 
 .reason-2 {
@@ -343,11 +335,12 @@ ul.site-navigation li:last-child {
 }
 ul.reason-345 {
   background-color: var(--basic-gray);
-  display: flex;                            /*Весь этот блок еще в процессе*/
+  display: flex;                            /*Весь этот блок еще в процессе..Почему-то сверху отступ, не могу понять откуда, сверху у элементов нет мешающих margin и у него его нет*/
   height: 256px;
   justify-content: baseline;
   list-style: none;
   margin-top: 0;
+
 }
 
 
@@ -557,14 +550,57 @@ form input:focus {
 
 /*****     catalog       *****/
 
-.background-catalog {
+.hotels-catalog {
   background-image: url(../img/background-blur.jpg);
   background-position: top;
   background-repeat: no-repeat;
   max-width: 100%;
+  width: 1200px;
   height: auto;
 }
 
+.form-sorting {
+  height: 217px;
+  display: flex;
+  background-color: skyblue;
+}
+.infrastructure {
+  display: flex;
+  flex-direction: column;
+  margin-right: 119px;
+  margin-top: 26.5px;
+  margin-left: 72px;
+  background-color: rebeccapurple;
+}
+
+.form-sorting button {
+  width: 137px;
+  height: 36px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-right: 35px;                  
+  padding-left: 36px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  margin-top: 149px; 
+  margin-right: 168px;                /*Копка не хочет двигаться..на margin-top она реагирует, а на margin-right- нет */
+}
+.type {
+  display: flex;
+  flex-direction: column;
+  margin-right: 347px;
+  margin-top: 26.5px;
+  background-color: royalblue;
+}
+
+.cost {
+  margin-top: 26.5px;
+  margin-right: 73px;
+  background-color: salmon;
+  
+}
 .form-sorting fieldset {
   background-color: transparent;
   border: none;
@@ -578,11 +614,15 @@ form input:focus {
   font-weight: 700;
 }
 
-.form-sorting button {
-  background-color: transparent;
-  border: 2px solid #FFFFFF;
+.results {
+  display: flex;
+  flex-direction: column;
 }
 
+.found {
+  display: flex;
+  background-color: violet;
+}
 .results ul {
   list-style: none;
 }
