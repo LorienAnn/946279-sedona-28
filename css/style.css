@@ -97,24 +97,33 @@ ul.site-navigation {
 
 ul.site-navigation li {
   width: 98px;
+  height: 26px;
+  background-color: salmon;
+  margin: 0;
 }
 
 ul.site-navigation li:nth-child(4n+1) {                                            
   margin-left: 72px; 
+  text-align: left;
 }
 
-ul.site-navigation li:nth-child(2) {                                
+ul.site-navigation li:nth-child(4n+2) {                                
   margin: auto;
-  margin-left: 134px;
+  text-align: left;
+  margin-left: 133px;
 }
 
-ul.site-navigation li:nth-child(3) {                                
+ul.site-navigation li:nth-child(4n+3) {                /* Он намертво прилип не правильно*/                   
   margin: auto;
-  margin-right: 147px;
+  text-align: right;                           
+  margin-right: 147px;                    
+  margin-left: 147px;
 }
 
-ul.site-navigation li:last-child {                 
+ul.site-navigation li:nth-child(4n+4) {                 
   margin-right: 72px;
+  margin-left: 0;
+  text-align: right;
 }
 
 .site-navigation a {
@@ -197,20 +206,22 @@ ul.site-navigation li:last-child {
 }
 
 .reason-1 {
-  background-color: var(--basic-blue);
+  background-color: var(--basic-blue);        
   display:flex;
   background-color: palegreen;
   margin: auto;
 }
 
 .true-city {
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-right: 52px;
- margin-left: 52px;
- color: var(--basic-white);
- background-color: orchid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*margin-right: 45px;                /*Не выпадает картинка только если такие маргины ставить у этого блока, но на макете маргины у текстового блока 52 px */
+  /*margin-left: 45px;*/
+  margin-right: 52px;
+  margin-left: 52px;
+  color: var(--basic-white);
+  background-color: orchid;
 }
 
 .true-city p {
@@ -303,7 +314,8 @@ ul.site-navigation li:last-child {
 .reason-2 {
   background-color: var(--basic-blue); 
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse;                 /*Тут весь блок вываливается слева*/
+  margin: auto;            
 }
 
  .bridge {
@@ -314,10 +326,11 @@ ul.site-navigation li:last-child {
   margin-left: 50px;
   margin-right: 49px;
   margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .bridge h3 {
-  margin: 0;               /* СДЕЛАЛА БОЛЬШЕ ШИРИНУ, ТПЕРЬ 2 СТРОКИ НО НУЖНОЕ СЛОВО НЕ ПЕРЕНЕСИТСЯ, КАКУЮ БЫ НЕ СТАВИЛА ШИРИНУ (мб тут допустим br?)*/
+  margin: 0;               /* СДЕЛАЛА БОЛЬШЕ ШИРИНУ, ТЕПЕРЬ 2 СТРОКИ НО НУЖНОЕ СЛОВО НЕ ПЕРЕНОСИТСЯ, КАКУЮ БЫ НЕ СТАВИЛА ШИРИНУ (мб тут допустим br?)*/
   width: 160px;               
   height: 43px;
 }
@@ -337,14 +350,12 @@ ul.reason-345 {
   background-color: var(--basic-gray);
   display: flex;                            /*Весь этот блок еще в процессе..Почему-то сверху отступ, не могу понять откуда, сверху у элементов нет мешающих margin и у него его нет*/
   height: 256px;
-  justify-content: baseline;
   list-style: none;
   margin-top: 0;
-
 }
 
 
-.reason-345 li:nth-child(3n+1) {
+ul.reason-345 li:nth-child(3n+1) {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,32 +364,34 @@ ul.reason-345 {
   margin-top: 47px;
   margin-left: 96px;
   margin-bottom: 54px;
+  margin-right: 168px;
   background-color: orangered;
 }
 
-.reason-345 li:nth-child(3n+2) {
+ul.reason-345 li:nth-child(3n+2) {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 47px;
   width: 258px;
-  margin-left: 168px;
   margin-right: 148px;
+  background-color: yellowgreen;
 }
 
-.reason-345 li:nth-child(3n+3) {
+ul.reason-345 li:nth-child(3n+3) {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 47px;
   margin-right: 77px;
   width: 246px;
+  background-color: rosybrown;
 }
 
 .reason-345 p{
-width: 250px;
-height: 43px;
-padding: 0;
+  width: 250px;
+  height: 43px;
+  padding: 0;
 
 }
 .reason-345 h3 {
@@ -489,64 +502,7 @@ form input:focus {
   background-color: var(--active-blue);
 }
 
-/*   footer   */
 
-.footer a {
-  color: var(--basic-black);
-}
-
-.footer {
-  background-color: var(--opacity-white);
-  color: var(--basic-black);
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: baseline;
-  height: 120px;
-  z-index: 3;
-  position: absolute;
-}
- .contacts {
-  width: 251px;
-  height: 61px;
-  margin-top: 23px;
-  margin-left: 111px;
-  margin-bottom: 36px;
-  text-align: center;
-  padding: 0;
-}
-
-.contacts p {
-  height: 26px;
-  margin: 0;
-}
-
-.contacts a {
-  margin-top: 9px;
-}
-
-.links {
-  text-align: center;
-  width: 150px;
-  height: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 36px;
-  background-color: var(--basic-brown);
-
-}
-
-.links li:first-child {
-  background-image: url(../img/twitter.svg);
- 
-}
-
-.link-academy {
-  font-weight: 400;
-}
 
 /*****     catalog       *****/
 
@@ -562,7 +518,6 @@ form input:focus {
 .form-sorting {
   height: 217px;
   display: flex;
-  background-color: skyblue;
 }
 .infrastructure {
   display: flex;
@@ -570,7 +525,10 @@ form input:focus {
   margin-right: 119px;
   margin-top: 26.5px;
   margin-left: 72px;
-  background-color: rebeccapurple;
+}
+
+.infrastructure legend {
+  margin-bottom: 24px;
 }
 
 .form-sorting button {
@@ -587,20 +545,24 @@ form input:focus {
   margin-top: 149px; 
   margin-right: 168px;                /*Копка не хочет двигаться..на margin-top она реагирует, а на margin-right- нет */
 }
+
 .type {
   display: flex;
   flex-direction: column;
   margin-right: 347px;
   margin-top: 26.5px;
-  background-color: royalblue;
 }
+
+ .type legend {
+  margin-bottom: 24px;
+ }
 
 .cost {
   margin-top: 26.5px;
   margin-right: 73px;
   background-color: salmon;
-  
 }
+
 .form-sorting fieldset {
   background-color: transparent;
   border: none;
@@ -620,33 +582,69 @@ form input:focus {
 }
 
 .found {
-  display: flex;
-  background-color: violet;
-}
-.results ul {
-  list-style: none;
-}
-
-.found {
   color: var(--basic-black);
   text-transform: uppercase;
+  display: flex;
+  background-color: violet;
+  height: 86px;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.found p:first-child {
+  padding: 0;
+  margin-left: 73px;
+  margin-top: 29px;
+  margin-right: 46px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.results p {
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: var(--basic-black);
+.found p:nth-child(2) {
+  background-color: chocolate;
+  margin-top: 31px;
+}
+.rotation {
+  list-style: none;
+  display: flex;
+  margin-top: 31px;
+  margin-bottom: 36px;
 }
 
+.rotation li:first-child {
+  margin-right: 32px;
+}
+
+.rotation li:nth-last-child(2) {
+  margin-right: 33px;
+}
+ 
 .rotation a{
   color: var(--opacity-black);
   font-size: 12px;
   line-height: 18px;
-  border-bottom: 1px dashed var(--basic-blue);
+  border-bottom: 1px dotted var(--basic-blue);
+}
+
+.up-down {
+  width: 34px;
+  height: 10px;
+  background-color: brown;
+  margin-right: 73px;
+  margin-left: 503px;
+  margin-top: 40px;
+}
+
+.up-down a:first-child {
+  background-image: url(../img/icon-up-dir.svg); /* Значки не видны */
+  margin-right: 12px;
+}
+
+.up-down a:last-child {
+  background-image: url(../img/icon-down-dir.svg);
 }
 
 .rotation a:hover {
@@ -656,6 +654,21 @@ form input:focus {
 .rotation a:active {
   color: var(--basic-black);
   border: none;
+}
+
+/* hotels*/
+
+.hotels h2 {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.hotels p {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
  .hotels a,
@@ -690,23 +703,106 @@ form input:focus {
   background-color: var(--basic-light-gray);
 }
 
-/* hotels*/
+/*.hotels {
+  display: grid;          Этот блок хочу попробовать сделать на гридах
+  
+}*/
 
-.hotels h2 {
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
+
+/*   footer   */
+
+.footer a {
   color: var(--basic-black);
 }
 
-.hotels p {
-  font-size: 14px;
-  line-height: 21px;
+.footer {
+  background-color: var(--opacity-white);
+  color: var(--basic-black);
   text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  display: flex;
+  justify-content: baseline;
+  width: 1200px;
+  height: 120px;
+  z-index: 3;
+  position: absolute;
+  background-color: seagreen;
+  padding: 0;
+  margin: 0;
+}
+ .contacts {
+  width: 251px;
+  height: 61px;
+  margin-top: 23px;
+  margin-left: 111px;
+  margin-bottom: 36px;
+  text-align: center;
+  padding: 0;
+  background-color: skyblue;
 }
 
+.contacts p {
+  height: 26px;
+  margin: 0;
+}
 
+.contacts a {
+  margin-top: 9px;
+}
 
+.links .navigation {
+  display: flex;
+  margin-top: 36px;
+  margin-left: 163px;
+  margin-right: 190px;
+}
+
+.links li {
+  width: 46px;
+  height: 48px;
+  margin: 0;
+  margin-right: 6px;
+}
+.links li:nth-child(3n+1) {
+  background-color: var(--basic-blue);
+  background-image: url(../img/twitter.svg);  
+  background-repeat: no-repeat;  
+  background-position: center;                 
+}
+.links li:nth-child(3n+2) {
+  background-color: var(--basic-blue);
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.links li:nth-child(3n+3) {
+  background-color: var(--basic-blue);
+  background-image: url(../img/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+.link-academy {
+  font-weight: 400;
+  margin: 0;
+  height: 41px;
+  width: 200px;  /*Тут пришлось увеличить ширину иначе текст плывёт*/
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  margin-right: 138px;
+ 
+}
+
+.link-academy p {
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 8px;   
+  margin-top: 11px;  
+  width: 90px;                             
+}
 
 /* SOS
 
@@ -714,7 +810,8 @@ form input:focus {
 -как-то слишком много стилей, особенно в списках или это нормально? Может, как вариант, доделать как доделывается, а потом 
 попытаться оптимизировать и удалить всё лишнее? Хотя, по идее лучше сразу не плодить лишнее, но я пытаюсь что-нибудь убрать (в тех же списках) и всё совсем плывёт
 -Весь текст- uppercase - может его можно вынести в :root ?
--Проблема с шрифтами - "тире", № - не такие как на макете
+-Я думаю карту и форму поиска завернуть в один див и сделать его флекс-контейнером, а их уже спозиционировать с помощью position и z-index ? Ил их можно вообще не заворачивать в див и без флексов попробовать? 
+
 */
 
 
