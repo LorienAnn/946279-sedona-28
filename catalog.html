@@ -52,12 +52,17 @@
                  </fieldset>
                  <fieldset>
                   <div class="cost">
-                  <legend>Стоимость в сутки (p):</legend> 
-                     <input type="range" name="range" id="id-range" min="0" max="4000" value="3000">
-                  </div> <!--Переделаю после нужной лекции-->
+                    <legend>Стоимость в сутки (p):</legend> 
+                    <div class="min-max">
+                      <label class="min"><input type="text" name="min" value="от 0"></label>
+                      <label class="max"><input type="text" name="max" value="до 3000"></label>
+                    </div> 
+                    <input type="range" name="range" id="id-range" min="0" max="3000" value="3000">
+                    <button type="submit">Показать</button>  
+                  </div>
                  </fieldset>
                 
-                 <button type="submit">Показать</button>  
+                 
              </form>
 
            </section>
@@ -77,36 +82,60 @@
                  <a href="#"><span class="visually-hidden">сверху</span></a>
                 </div>
               </div>
-             <ul class="hotels">
+             <ul class="hotels"> 
                 <li>
-                  <h2>Amara Resort & Spa</h2>
                   <img src="img/Amara.jpg" width="135" height="90" alt="фото Amara Resort & Spa">
-                  <p>Гостиница</p>
-                  <p>от 4000 р.</p>
-                  <a href="#">Подробнее</a>
-                  <button>Забронировать</button>
-                  <span>Тут будут звёзды</span> <!--эти надписи удалю позже-->
-                  <span>Рейтинг 8,5</span>
+                  <div class="hotel">
+                    <h2>Amara Resort & Spa</h2>
+                    <div class="found-cost">
+                      <p>Гостиница</p>
+                      <p>от 4000 р.</p>
+                    </div>  
+                    <div class="more-book">
+                      <a href="#">Подробнее</a>
+                      <button>Забронировать</button>
+                    </div> 
+                  </div>
+                  <div class="stars">
+                    <span>Тут будут звёзды</span> <!--эти надписи удалю позже-->
+                    <span>Рейтинг 8,5</span>
+                  </div>  
                 </li> 
                 <li>
-                  <h2>Desert Quail Inn</h2>
                   <img src="img/Desert.jpg" width="135" height="90" alt="фото Desert Quail Inn">
-                  <p>Мотель</p>
-                  <p>от 3000 р.</p>
-                  <a href="#">Подробнее</a>
-                  <button>Забронировать</button>
-                  <span>Тут будут звёзды</span>
-                  <span>Рейтинг 8,9</span>
+                  <div class="hotel">
+                    <h2>Desert Quail Inn</h2>   
+                    <div class="found-cost">            
+                      <p>Мотель</p>
+                      <p>от 3000 р.</p>
+                    </div>
+                    <div class="more-book">  
+                    <a href="#">Подробнее</a>
+                    <button>Забронировать</button>
+                    </div> 
+                    </div> 
+                    <div class="stars">
+                      <span>Тут будут звёзды</span>
+                      <span>Рейтинг 8,9</span>
+                    </div>  
                 </li>
                 <li>
-                  <h2>Villas at Poco Diablo</h2>
                   <img src="img/Villas.jpg" width="135" height="90" alt="фото Villas at Poco Diablo">
-                  <p>Апартаменты</p>
-                  <p>от 2000 р.</p>
-                  <a href="#">Подробнее</a>
-                  <button>Забронировать</button>
-                  <span>Тут будут звёзды</span>
-                  <span>Рейтинг 9,2</span>
+                  <div class="hotel">
+                    <h2>Villas at Poco Diablo</h2>
+                    <div class="found-cost">  
+                      <p>Апартаменты</p>
+                      <p>от 2000 р.</p>
+                    </div>
+                    <div class="more-book">
+                      <a href="#">Подробнее</a>
+                      <button>Забронировать</button>
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <span>Тут будут звёзды</span>
+                    <span>Рейтинг 9,2</span>
+                  </div>
                 </li>
               </ul>
            </section>   
