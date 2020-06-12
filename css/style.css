@@ -208,8 +208,7 @@ ul.site-navigation li:nth-child(4n+4) {
 }
 
 .reason-1 {     
-  display:flex;
-  flex-direction: column;
+  display: grid;
   margin: auto;
 }
 
@@ -339,48 +338,46 @@ ul.site-navigation li:nth-child(4n+4) {
   margin: 0;
   margin-top: 23px;
 }
-ul.reason-345 {
-  
- /* background-color: var(--basic-gray);
-  display: flex;                            /*Весь этот блок еще в процессе..Почему-то сверху отступ, не могу понять откуда, сверху у элементов нет мешающих margin и у него его нет*/
+.reason-345 {
+  background-color: var(--basic-gray);
+  display: grid;
+  grid-template-columns: 400px 400px 400px;  
+  grid-template-rows: 256px;                          /*Весь этот блок еще в процессе..Почему-то сверху отступ, не могу понять откуда, сверху у элементов нет мешающих margin и у него его нет*/
   height: 256px;
   list-style: none;
-  margin: 0;
-  padding-top: 47px;
-  padding-bottom: 54px;
-  padding-right: 77px;
   box-sizing: border-box;
+  padding: 0;
 }
 
-ul.reason-345 li:nth-child(3n+1) {
+.reason-345 li:nth-child(3n+1) {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 207px;
   height: 155px;
-  margin-left: 96px;
-  margin-right: 168px;
+  margin: auto;
   box-sizing: border-box;
-  padding: 0;
   background-color: orangered;
 }
 
-ul.reason-345 li:nth-child(3n+2) {
+.reason-345 li:nth-child(3n+2) {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   width: 258px;
+  height: 155px;
+  margin: auto;
   background-color: yellowgreen;
 }
 
-ul.reason-345 li:nth-child(3n+3) {
+.reason-345 li:nth-child(3n+3) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  margin-left: 148px;
+  margin: auto;
   width: 246px;
+  height: 155px;
   background-color: rosybrown;
   box-sizing: border-box;
 }
@@ -388,9 +385,8 @@ ul.reason-345 li:nth-child(3n+3) {
 .reason-345 p{
   width: 250px;
   height: 43px;
-  padding: 0;
-
 }
+
 .reason-345 h3 {
   width: 119px;
   margin: 0;
@@ -835,7 +831,7 @@ ul.hotels img {
   height: 120px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0;
-  z-index: 4;
+  z-index: 5;
   position: absolute;
   text-transform: uppercase;
   font-size: 21px;
