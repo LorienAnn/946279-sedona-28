@@ -35,7 +35,7 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 body {
   min-height: 100vh;
@@ -71,14 +71,15 @@ img {
   color: var(--basic-black);
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
+  box-sizing: border-box;
+  height: 56px;
 }
 
 .logo {
   position: absolute;              
   z-index: 2;
+  right: 531px;
 }
 
 .navigation {
@@ -86,14 +87,17 @@ img {
 }
 
 ul.site-navigation {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center;*/
   width: 100%;
+  height: 56px;
   min-height: 56px;
-  margin: 0;
+  padding-top: 15px;
   padding-left: 72px;
-  padding-right: 72px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 ul.site-navigation li {
@@ -103,16 +107,15 @@ ul.site-navigation li {
 }
 
 ul.site-navigation li:nth-child(4n+1) {                                            
-  margin-left: 72px; 
   text-align: left;
-  margin-right: 107px;
 }
 
 ul.site-navigation li:nth-child(4n+2) {                                
   text-align: left;
+  margin-right: 250px;         /*Этот пункт не хотел двигаться, я в инспекторе методом тыка подобрала 250px, но почему именно 250 подошло я не поняла*/
 }
 
-ul.site-navigation li:nth-child(4n+3) {                /* Он намертво прилип не правильно*/                   
+ul.site-navigation li:nth-child(4n+3) {                                 
   text-align: right;
   margin-left: auto;                           
 }
@@ -165,7 +168,6 @@ ul.site-navigation li:nth-child(4n+4) {
 
 /* Advantages */
 
-
 .advantages {
   text-transform: uppercase;
   background-color: var(--basic-white);
@@ -204,7 +206,6 @@ ul.site-navigation li:nth-child(4n+4) {
   width: 1200px;
   box-sizing: border-box;
   display: grid;
-  background-color: indigo;
 }
 
 .reason-1 {     
@@ -221,11 +222,13 @@ ul.site-navigation li:nth-child(4n+4) {
   color: var(--basic-white);
   box-sizing: border-box;
 }
+
 .true-city-text {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .true-city p {
   margin-top: 23px; 
 }
@@ -304,15 +307,12 @@ ul.site-navigation li:nth-child(4n+4) {
   margin-top: 25px;
   font-size: 14px;
   line-height: 21px;
-  
 }
 .reason-2 {
-  
-  /*background-color: var(--basic-blue); */
+  background-color: var(--basic-blue); 
   display: flex;
   flex-direction: row-reverse;                 
-  
-  }
+}
 
  .bridge {
   display: flex;
@@ -338,11 +338,12 @@ ul.site-navigation li:nth-child(4n+4) {
   margin: 0;
   margin-top: 23px;
 }
+
 .reason-345 {
-  background-color: var(--basic-gray);
+  background-color: var(--basic-gray);        /*Поплыло всё тут немного, где ошибка?*/
   display: grid;
   grid-template-columns: 400px 400px 400px;  
-  grid-template-rows: 256px;                          /*Весь этот блок еще в процессе..Почему-то сверху отступ, не могу понять откуда, сверху у элементов нет мешающих margin и у него его нет*/
+  grid-template-rows: 256px;                           
   height: 256px;
   list-style: none;
   box-sizing: border-box;
@@ -357,7 +358,6 @@ ul.site-navigation li:nth-child(4n+4) {
   height: 155px;
   margin: auto;
   box-sizing: border-box;
-  background-color: orangered;
 }
 
 .reason-345 li:nth-child(3n+2) {
@@ -368,7 +368,6 @@ ul.site-navigation li:nth-child(4n+4) {
   width: 258px;
   height: 155px;
   margin: auto;
-  background-color: yellowgreen;
 }
 
 .reason-345 li:nth-child(3n+3) {
@@ -378,7 +377,6 @@ ul.site-navigation li:nth-child(4n+4) {
   margin: auto;
   width: 246px;
   height: 155px;
-  background-color: rosybrown;
   box-sizing: border-box;
 }
 
@@ -407,11 +405,15 @@ ul.site-navigation li:nth-child(4n+4) {
 /* Search form*/
 
 .search-map {
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  margin-top: 58px;
-  background-color: red;
+  height: 764px;
+  box-sizing: border-box;
+  background-color: mediumpurple;
+}
+
+.map {
+  height:594px;
+  margin-top: 291px;
 }
 
 .search-form {
@@ -421,32 +423,79 @@ ul.site-navigation li:nth-child(4n+4) {
   line-height: 26px;
   text-transform: uppercase;
   width: 568px;
-  height: 628px;
   position: absolute;
   z-index: 2;
   margin: 0;
   padding: 0;
   margin-left: 316px;
   margin-right: 316px;
-  background-color: rebeccapurple;
   margin-bottom: 78px;
+  margin-top: 58px;
 }
 
-.window {
-  background-color: springgreen;
-  height: 395;
-  margin: 0;
-  padding: 0;
-}
-
-.fieldset {
-  border:none;
+.search-intro {
+  width: 435px;
+  height: 145px;
+  text-align: center;
+  margin: auto;
+  color: black;
 }
 
 .uppercase {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
+  margin-top: 0;
+}
+
+.window {
+  height: 481px;
+  width: 568px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.window form {
+  height: 395px;
+  padding: 55px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.fieldset {
+  border: none;
+  width: 458px;
+  height: 285px;
+  padding: 0;
+}
+
+.arrival-depart {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.arrival-depart input {
+  height: 38px;
+  width: 346px;
+  padding-left: 12px;
+}
+
+.arrival-depart p {
+  height: 38px;
+}
+
+.people {
+  height: 38px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.people input {
+  width: 114px;
 }
 
 .button-brown {
@@ -456,6 +505,10 @@ ul.site-navigation li:nth-child(4n+4) {
   line-height: 26px;
   vertical-align: middle;
   border: none;
+  height: 86px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .button-brown:hover,
@@ -470,6 +523,8 @@ ul.site-navigation li:nth-child(4n+4) {
 .fieldset input {
   background-color: var(--basic-light-gray);
   border: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 form input:hover {
@@ -487,6 +542,15 @@ form input:focus {
   text-align: center;         
   vertical-align: middle;   /* я не вижу разницы с vertical-align и без него, а в  */
   color: var(--basic-white);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  height: 58px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: 43px;
 }
 
 .search:hover {
@@ -508,7 +572,6 @@ form input:focus {
   max-width: 100%;
   width: 1200px;
   height: auto;
-  
 }
 
 .form-sorting {
@@ -525,7 +588,6 @@ form input:focus {
   flex-direction: column;
   margin-top: 26.5px;
   margin-left: 72px;
-  background-color: lightgreen;
 }
 
 .infrastructure legend {
@@ -551,7 +613,6 @@ form input:focus {
   flex-direction: column;
   margin-left: 119px; 
   margin-top: 26.5px;
-  background-color: lightpink;
 }
 
 .type legend {
@@ -708,7 +769,6 @@ form input:focus {
   margin-top: 0;
   box-sizing: border-box;
   padding: 0;
-  background-color: lightcoral;
 }
 
 .more-book {
@@ -723,7 +783,6 @@ form input:focus {
 }
 
 .stars span:last-child {
-  background-color: hotpink;
   text-align: center;
   padding-left: 15px;
   padding-right: 12px;
@@ -799,9 +858,6 @@ ul.hotels img {
   background-color: var(--basic-light-gray);
 }
 
-
-
-
 /*   footer   */
 
 .footer a {
@@ -840,6 +896,7 @@ ul.hotels img {
   padding-right: 138px;
   padding-left: 111px;
   box-sizing: border-box;
+  background-color: var(--opacity-white);
 }
 
  .contacts {
