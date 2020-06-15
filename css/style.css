@@ -446,18 +446,19 @@ ul.city li {
 }
 
 .fieldset {
-  width: 568px;
-  height: 395px;
-  box-sizing: border-box;
-  padding: 55px;
+  width: 458px;
+  height: 285px;
+  margin: 55px;
   border: none;
   display: flex;
+  background-color: deeppink;
+  flex-direction: column;
+  padding: 0;
 }
 
 .fieldset input {
   height: 38px;
   width: 346px;
-  padding-left: 12px;
 }
 
 .fieldset p {
@@ -465,16 +466,31 @@ ul.city li {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  margin-top: 0;
 }
+
+.input-arrivals {
+  background-color: darkolivegreen;
+  margin-bottom: 29px;
+}
+
+ .input-arrivals span {
+   background-color: darkslateblue;
+ }
 
 .people {
   height: 38px;
   display: flex;
   justify-content: space-between; 
+  margin-bottom: 54px;
 }
-
+.input-departures {
+  background-color: darkviolet;
+  margin-bottom: 30px;
+}
 .people input {
   width: 114px;
+  
 }
 
 .button-brown {
@@ -556,18 +572,17 @@ form input:focus {
 
 .form-sorting {
   height: 217px;
-  background-color: darkblue ;
   padding-right: 72px;
   padding-top: 26.5px;
   display: flex;
   box-sizing: border-box;
+  background-color: darkgoldenrod;
 }
 
 .infrastructure {
   min-height: 158px;
   display: flex;
   flex-direction: column;
-  background-color: turquoise;
   margin-left: 72px;
   margin-right: 119px;
 }
@@ -593,7 +608,6 @@ form input:focus {
   display: flex;
   width: 137px;
   flex-direction: column;
-  background-color: tomato;
 }
 
 .type legend {
@@ -607,8 +621,9 @@ form input:focus {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: violet;
   margin-left: 347px;
+  
+  background-color: darkcyan;
 }
 
 .min-max {
