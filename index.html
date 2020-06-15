@@ -17,7 +17,7 @@
               <li><a href="#">Информация</a></li>         
               <li><a href="#">Фото и видео</a></li>
               <li><a href="#">Карта штата</a></li>
-              <li><a href="#">Гостиницы</a></li>
+              <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
           <a class="logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип"></a>
       </nav>
@@ -106,7 +106,7 @@
             </ul> 
             </ul>
         </section>
-        <!--<div class="search-map">-->
+        <div class="search-map">
         <section class="search-form">
           <h2 class="visually-hidden">Форма поиска гостиницы в городе Седона</h2>
           <div class="search-intro">
@@ -118,18 +118,16 @@
             <button class="button-brown">Поиск гостиницы в Седоне</button>
             <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="fieldset">  
-                <div class="arrival-depart">
                   <p>
-                    <label>Дата заезда<input type="text" name="arrival" value="24 апреля 2017"></label>
+                    <label>Дата заезда:<input type="text" name="arrival" value="24 апреля 2017"></label>
                   </p>
                   <p>
-                    <label>Дата выезда<input type="text" name="departure" value="4 июля 2017"></label>
+                    <label>Дата выезда:<input type="text" name="departure" value="4 июля 2017"></label>
                   </p>
-               </div>
                 <p class="people">
-                  <label for="amount-adults">Взрослые</label>      
+                  <label for="amount-adults">Взрослые:</label>      
                   <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
-                  <label for="amount-children">Дети</label>
+                  <label for="amount-children">Дети:</label>
                   <input type="number" min="0" max="10" name="children" id="amount-children">
                 </p>
                 <button type="submit" class="search">Найти</button> 
@@ -139,8 +137,8 @@
         </section> 
       <section class="map">
        <img src="img/map.jpg" width="1199" height="594" alt="карта местности">  
-      </section>
-      </div>     
+      </section> 
+    </div>  
       </main>
 
       <footer>
