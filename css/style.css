@@ -158,6 +158,13 @@ ul.site-navigation li:nth-child(4n+4) {
   padding: 0;
 }
 
+.shape {
+  background-image: url(../img/shape.png);
+  height: 57px;
+  top: 18px;
+  position: relative;
+}
+
 /* Advantages */
 
 .advantages {
