@@ -474,6 +474,7 @@ ul.city li {
   line-height: 26px;
   font-weight: 700;
   margin-top: 0;
+  display: flex;
 }
 
 .input-arrivals {
@@ -481,8 +482,25 @@ ul.city li {
   margin-bottom: 29px;
 }
 
+.input-arrivals img {
+  position: absolute;
+  bottom: 310px;
+  right: 64px;
+}
+
  .input-arrivals span {
    background-color: darkslateblue;
+ }
+
+ .arrival-departures input{
+  position: relative;
+  left: 20px;
+ }
+
+ .input-departures img {
+   position: absolute;
+   right: 64px;
+   bottom: 243px;
  }
 
 .people {
@@ -497,7 +515,6 @@ ul.city li {
 }
 .people input {
   width: 114px;
-  
 }
 
 .button-brown {
@@ -901,9 +918,17 @@ ul.hotels img {
   min-height: 48px;
 }
 
+.links li:hover {
+  background-color: var(--hover-blue);
+}
+
+.links li:active {
+  background-color: var(--active-blue);
+}
+
 .links li:nth-child(3n+1) {
   background-color: var(--basic-blue);
-  background-image: url(../img/twitter.svg);  
+  background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;  
   background-position: center;  
   margin-right: 6px;               
