@@ -5,7 +5,8 @@
   --basic-light-gray: #F2F2F2;
   --basic-gray:  #EEEEEE;
   --basic-black: #000000;
-  --opacity-black : rgb(0,0,0, 0.3);
+  --opacity-black: rgb(0,0,0, 0.3);
+  --opacity-white-light: rgb(255,255,255, 0.3);
   --opacity-white: rgb(255,255,255, 0.9);
 
   --hover-blue: #669EC0;
@@ -331,7 +332,7 @@ ul.city li {
 }
 
 .bridge h3 {
-  margin: 0;               /* СДЕЛАЛА БОЛЬШЕ ШИРИНУ, ТЕПЕРЬ 2 СТРОКИ НО НУЖНОЕ СЛОВО НЕ ПЕРЕНОСИТСЯ, КАКУЮ БЫ НЕ СТАВИЛА ШИРИНУ (мб тут допустим br?)*/
+  margin: 0;               
   width: 160px;               
   height: 43px;
 }
@@ -346,7 +347,7 @@ ul.city li {
 }
 
 .reason-345 {
-  background-color: var(--basic-gray);        /*Поплыло всё тут немного, где ошибка?*/
+  background-color: var(--basic-gray);        
   display: grid;
   grid-template-columns: 400px 400px 400px;  
   grid-template-rows: 256px;                           
@@ -616,15 +617,15 @@ form input:focus {
   padding-top: 26.5px;
   display: flex;
   box-sizing: border-box;
-  background-color: darkgoldenrod;
 }
 
 .infrastructure-type {
-display: flex;
-width: 391px;
-min-height: 158px;
-justify-content: space-between;
+  display: flex;
+  width: 391px;
+  min-height: 158px;
+  justify-content: space-between;
 }
+
 .infrastructure-type legend{
   margin-bottom: 24px;
 }
@@ -662,7 +663,6 @@ justify-content: space-between;
   align-items: center;
   justify-content: flex-start;
   margin-left: 347px;
-  background-color: darkcyan;
 }
 .cost legend{
   align-self: flex-start;
@@ -731,6 +731,19 @@ justify-content: space-between;
   border-bottom: 1px dotted var(--basic-blue);
 }
 
+.rotation a:focus {
+  color: var(--basic-blue);
+}
+
+.rotation a:hover {
+  color: var(--basic-blue);
+}
+
+.rotation a:active {
+  color: var(--basic-black);
+  border: none;
+}
+
 .up-down {
   width: 34px;
   height: 10px;
@@ -748,14 +761,6 @@ justify-content: space-between;
   background-image: url(../img/icon-down-dir.svg);
 }
 
-.rotation a:hover {
-  color: var(--basic-blue);
-}
-
-.rotation a:active {
-  color: var(--basic-black);
-  border: none;
-}
 
 /* hotels*/
 
@@ -777,18 +782,6 @@ justify-content: space-between;
   padding-left: 73px;
   padding-right: 73px;
   box-sizing: border-box;
-}
-
-.hotels li:nth-child(3n+1) {
-  background-color: gold;
-}
-
-.hotels li:nth-child(3n+2) { 
-  background-color: goldenrod;
-}
-
-.hotels li:nth-child(3n+3) {
-  background-color: khaki;
 }
 
 .hotel {
@@ -864,6 +857,15 @@ ul.hotels img {
   box-sizing: border-box;
 }
 
+.hotels a:hover {
+  background-color: var(--hover-blue);
+}
+
+.hotels a:focus {
+  background-color: var(--active-blue);
+  color: var(--opacity-white-light);
+}
+
  .hotels button {
   font-weight: 700;
   background-color: var(--basic-brown);
@@ -878,10 +880,21 @@ ul.hotels img {
   margin-left: 6px;
 }
 
+.hotels button:hover {
+  background-color: var(--hover-brown);
+}
+
+.hotels button:focus {
+  background-color: var(--active-brown);
+  color: var(--opacity-white-light);
+}
+
 .results span {
   color: var(--booking-brown);
   background-color: var(--basic-light-gray);
 }
+
+
 
 /*   footer   */
 
@@ -959,6 +972,7 @@ ul.hotels img {
 
 .links li:active {
   background-color: var(--active-blue);
+  
 }
 
 .link-academy {
