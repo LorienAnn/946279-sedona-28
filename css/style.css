@@ -619,6 +619,25 @@ form input:focus {
   box-sizing: border-box;
 }
 
+.check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.infrastructure-list {
+  min-height: 113px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 27px;
+  position: relative;
+  margin-right: 100px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
 .infrastructure-type {
   display: flex;
   width: 391px;
@@ -626,16 +645,41 @@ form input:focus {
   justify-content: space-between;
 }
 
+.infrastructure legend{
+  right: 12px;
+}
 .infrastructure-type legend{
   margin-bottom: 24px;
+  bottom: 5px;
+  position: relative;
 }
 
-.infrastructure {
-  width: 135px;
-  display: flex;
-  flex-direction: column;
+.check-box-pool {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  bottom: 94px;
+  right: 81px;
 }
 
+.check-box-parking,
+.check-box-wf {
+  position: absolute;
+  background-image: url(../img/checkbox-off.svg);
+  width: 23px;
+  height: 23px;
+  right: 85px;
+}
+
+.check-box-parking {
+  bottom: 48px;
+
+}
+
+.check-box-wf {
+  bottom: 3px;
+}
 .form-sorting button {
   width: 137px;
   height: 36px;
@@ -649,11 +693,11 @@ form input:focus {
   border: 2px solid #FFFFFF;              
 }
 
-.type {
+/*.type {
   display: flex;
   width: 137px;
   flex-direction: column;
-}
+}*/
 
 .cost {
   height: 158px;
