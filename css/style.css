@@ -52,6 +52,11 @@ body {
   box-sizing: border-box;  
 }
 
+main,
+header,
+footer {
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
 a {
   text-decoration: none;
 }
@@ -93,9 +98,9 @@ ul.site-navigation {
   padding-left: 72px;
   margin: 0;
   display: grid;
-  grid-template-columns: 230px 1fr 1fr 230px;
+  grid-template-columns: 218px 1fr 1fr 218px;
   padding-right: 72px;
-  /*gap: 10px;*/
+  gap: 10px;
 }
 
 ul.site-navigation li {
@@ -347,7 +352,6 @@ ul.city li {
   grid-template-rows: 256px;                           
   height: 256px;
   list-style: none;
-  box-sizing: border-box;
   padding: 0;
 }
 
@@ -355,8 +359,8 @@ ul.city li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 207px;
   height: 155px;
+  margin-top: 46px;
   margin: auto;
   box-sizing: border-box;
 }
@@ -365,10 +369,10 @@ ul.city li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
-  width: 258px;
+  box-sizing: border-box; 
   height: 155px;
   margin: auto;
+  margin-top: 46px;
 }
 
 .reason-345 li:nth-child(3n+3) {
@@ -376,20 +380,25 @@ ul.city li {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 246px;
+  margin-top: 46px;
   height: 155px;
   box-sizing: border-box;
 }
 
 .reason-345 p{
-  width: 250px;
+  width: 265px;
   height: 43px;
+  margin-top: 25px;
 }
 
+.reason-345 p:nth-child(2) {
+  width: 270px;
+}
 .reason-345 h3 {
   width: 119px;
   margin: 0;
 }
+
 .advantages-list h3,
 .advantages-list h4,
 .reason-345 h3 {
@@ -400,6 +409,8 @@ ul.city li {
 .advantages-list span,
 .reason-345 span {
   font-size: 14px; 
+}
+.advantages-list span {
   margin-top: 25px;
 }
 
@@ -435,7 +446,6 @@ ul.city li {
   height: 145px;
   text-align: center;
   margin: auto;
-  color: black;
 }
 
 .uppercase {
@@ -457,15 +467,20 @@ ul.city li {
   height: 285px;
   margin: 55px;
   border: none;
-  display: flex;
-  background-color: deeppink;
-  flex-direction: column;
   padding: 0;
 }
+.search-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 458px;
+}
 
-.fieldset input {
+.search-label input {
   height: 38px;
-  width: 346px;
+  flex-grow: 1;
+  margin-left: 20px;
+  padding-left: 13px;
 }
 
 .fieldset p {
@@ -478,7 +493,6 @@ ul.city li {
 }
 
 .input-arrivals {
-  background-color: darkolivegreen;
   margin-bottom: 29px;
 }
 
@@ -488,15 +502,6 @@ ul.city li {
   right: 64px;
 }
 
- .input-arrivals span {
-   background-color: darkslateblue;
- }
-
- .arrival-departures input{
-  position: relative;
-  left: 20px;
- }
-
  .input-departures img {
    position: absolute;
    right: 64px;
@@ -504,18 +509,27 @@ ul.city li {
  }
 
 .people {
-  height: 38px;
   display: flex;
-  justify-content: space-between; 
-  margin-bottom: 54px;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
+
 .input-departures {
-  background-color: darkviolet;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
-.people input {
-  width: 114px;
+
+.adults-label span{
+  margin-right: 40px;
 }
+.adults-label input,
+.child-label input {
+  width: 112px;
+  text-align: center;
+}
+.child-label input{
+  margin-left: 20px;
+}
+
 
 .button-brown {
   background-color: var(--basic-brown);
@@ -544,6 +558,7 @@ ul.city li {
   border: none;
   text-transform: uppercase;
   font-weight: 700;
+  height: 38px;
 }
 
 form input:hover {
@@ -595,24 +610,29 @@ form input:focus {
 }
 
 .form-sorting {
-  height: 217px;
+  min-height: 217px;
   padding-right: 72px;
+  padding-left: 72px;
   padding-top: 26.5px;
   display: flex;
   box-sizing: border-box;
   background-color: darkgoldenrod;
 }
 
-.infrastructure {
-  min-height: 158px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 72px;
-  margin-right: 119px;
+.infrastructure-type {
+display: flex;
+width: 391px;
+min-height: 158px;
+justify-content: space-between;
+}
+.infrastructure-type legend{
+  margin-bottom: 24px;
 }
 
-.infrastructure legend {
-  margin-bottom: 24px;
+.infrastructure {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-sorting button {
@@ -634,10 +654,6 @@ form input:focus {
   flex-direction: column;
 }
 
-.type legend {
-  margin-bottom: 24px;
- }
-
 .cost {
   height: 158px;
   width: 317px;
@@ -646,10 +662,12 @@ form input:focus {
   align-items: center;
   justify-content: flex-start;
   margin-left: 347px;
-  
   background-color: darkcyan;
 }
-
+.cost legend{
+  align-self: flex-start;
+  margin-bottom: 11px;
+}
 .min-max {
   display: flex;
   width: 317px;
@@ -889,7 +907,7 @@ ul.hotels img {
   margin-top: 23px;
   margin-bottom: 36px;
   text-align: center;
-  padding-left: 70px;
+  padding-left: 72px;
 }
 
 .contacts p {
@@ -916,6 +934,23 @@ ul.hotels img {
 .links li {
   width: 46px;
   min-height: 48px;
+  background-color: var(--basic-blue);
+  background-repeat: no-repeat;  
+  background-position: center;  
+}
+
+.links li:nth-child(3n+1) {
+  background-image: url(../img/twitter.svg);
+  margin-right: 6px;               
+}
+
+.links li:nth-child(3n+2) {
+  background-image: url(../img/fb-icon.svg);
+  margin-right: 6px; 
+}
+
+.links li:nth-child(3n+3) {
+  background-image: url(../img/youtube.svg); 
 }
 
 .links li:hover {
@@ -926,32 +961,9 @@ ul.hotels img {
   background-color: var(--active-blue);
 }
 
-.links li:nth-child(3n+1) {
-  background-color: var(--basic-blue);
-  background-image: url(../img/twitter.svg);
-  background-repeat: no-repeat;  
-  background-position: center;  
-  margin-right: 6px;               
-}
-
-.links li:nth-child(3n+2) {
-  background-color: var(--basic-blue);
-  background-image: url(../img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center; 
-  margin-right: 6px; 
-}
-
-.links li:nth-child(3n+3) {
-  background-color: var(--basic-blue);
-  background-image: url(../img/youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center; 
-}
-
 .link-academy {
   font-weight: 400;       
-  margin-top: 38px;
+  margin-top: 42px;
   height: 41px;  
   display: flex;
   align-items: center;
@@ -960,9 +972,8 @@ ul.hotels img {
 
 .link-academy p {
   font-size: 14px;
-  line-height: 26px;             
-  margin-top: 11px;  
-  width: 90px;                           
+  line-height: 26px;               
+  width: 82px;                           
 }
 
 /* SOS

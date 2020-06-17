@@ -78,7 +78,8 @@
             </li>
             <li class="reason-2">
                 <div class="bridge">
-                  <h3>Там есть мост дьявола</h3>
+                  <h3>Там есть<br>
+                     мост дьявола</h3>
                   <span>&mdash; №2 &mdash;</span>
                   <p>Да, по нему можно пройти! Если конечно
                   вы осмелитесь</p>
@@ -101,7 +102,7 @@
               <li>
                 <h3>Мало туристов</h3>
                 <span>&mdash; №5 &mdash;</span>
-                <p>большинство едет в Гранд Каньон 
+                <p>большинство едет в Гранд Каньон<br> 
               и толпится там</p>
               </li>
             </ul> 
@@ -121,17 +122,23 @@
               <fieldset class="fieldset">  
                  <div class="arrival-departures">
                   <p class="input-arrivals">
-                    <label><span>Дата заезда:</span><input type="text" name="arrival" value="24 апреля 2017"><img src="img/calendar.svg"></label>
+                    <label class="search-label"><span>Дата заезда:</span><input type="text" name="arrival" value="24 апреля 2017"><img src="img/calendar.svg"></label>
                   </p>
                   <p class="input-departures">
-                    <label><span>Дата выезда:</span><input type="text" name="departure" value="4 июля 2017"><img src="img/calendar.svg"></label>
+                    <label class="search-label"><span>Дата выезда:</span><input type="text" name="departure" value="4 июля 2017"><img src="img/calendar.svg"></label>
                   </p>
                 </div>
                 <p class="people">
-                  <label for="amount-adults">Взрослые:</label>      
-                  <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
-                  <label for="amount-children">Дети:</label>
-                  <input type="number" min="0" max="10" name="children" id="amount-children">
+                  <label for="amount-adults" class="adults-label">
+                    <span>Взрослые:</span>
+                    <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
+                  </label>      
+                  
+                  <label for="amount-children" class="child-label">
+                    <span>Дети:</span>
+                    <input type="number" min="0" max="10" name="children" value="0" id="amount-children">
+                  </label>
+                  
                 </p>
                 <button type="submit" class="search">Найти</button> 
               </fieldset>
