@@ -619,25 +619,6 @@ form input:focus {
   box-sizing: border-box;
 }
 
-.check-input {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  position: absolute;
-}
-
-.infrastructure-list {
-  min-height: 113px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 27px;
-  position: relative;
-  margin-right: 100px;
-  padding-bottom: 5px;
-  box-sizing: border-box;
-}
-
 .infrastructure-type {
   display: flex;
   width: 391px;
@@ -645,41 +626,75 @@ form input:focus {
   justify-content: space-between;
 }
 
+.infrastructure-list,
+.type-list {
+  min-height: 113px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 27px;
+  position: relative;
+  margin-right: 126px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.type-list {
+  margin-right: 100px; 
+}
+
+.check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
 .infrastructure legend{
   right: 12px;
 }
+
 .infrastructure-type legend{
   margin-bottom: 24px;
   bottom: 5px;
   position: relative;
 }
 
-.check-box-pool {
-  position: absolute;
-  width: 27px;
-  height: 23px;
-  background-image: url(../img/checkbox-on.svg);
-  bottom: 94px;
-  right: 81px;
-}
-
-.check-box-parking,
-.check-box-wf {
-  position: absolute;
+.check-box,
+.check-box:hover  {
   background-image: url(../img/checkbox-off.svg);
   width: 23px;
   height: 23px;
-  right: 85px;
+  position: absolute;
+  right: 75px;
 }
 
-.check-box-parking {
-  bottom: 48px;
-
+.check-input:checked + .check-box {
+  background-image: url(../img/checkbox-on.svg);
 }
 
-.check-box-wf {
+.check-input:disabled + .check-box {
+  background-image: 
+}
+
+/*.infrastructure-type span{
+  margin-right: 10px;
+ /* width: 27px;
+  height: 23px;
+}
+
+.infrastructure-list label span:nth-of-type(2){
+  position: absolute;
+  right: 75px;
+  bottom: 68px;
+}
+
+.infrastructure-list span:nth-of-type(3),
+.type-list span:nth-of-type(3)  {
+  position: absolute;
   bottom: 3px;
-}
+}*/
+
 .form-sorting button {
   width: 137px;
   height: 36px;
@@ -693,12 +708,14 @@ form input:focus {
   border: 2px solid #FFFFFF;              
 }
 
-/*.type {
-  display: flex;
-  width: 137px;
-  flex-direction: column;
-}*/
-
+.type-list span:nth-of-type(2) {
+  position: absolute;
+  right: 75px;
+  bottom: 48px;
+}
+.type-list span {
+  margin-right: 27px;
+}
 .cost {
   height: 158px;
   width: 317px;
