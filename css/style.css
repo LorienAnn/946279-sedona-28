@@ -58,6 +58,7 @@ header,
 footer {
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
+
 a {
   text-decoration: none;
 }
@@ -105,7 +106,7 @@ ul.site-navigation {
 }
 
 ul.site-navigation li {
-  height: 26px;  
+  min-height: 26px;  
 }
 
 ul.site-navigation li:nth-child(4n+1) {                                            
@@ -258,7 +259,7 @@ ul.city li {
   margin-top: 25px;
   font-size: 14px;
   line-height: 21px;
-  height: 42px;
+  min-height: 42px;
 }
 
 .housing  {                              
@@ -310,7 +311,7 @@ ul.city li {
 
 .souvenirs p {           
   width: 280px;
-  height: 43px;                            
+  min-height: 43px;                            
   margin-top: 25px;
   font-size: 14px;
   line-height: 21px;
@@ -349,9 +350,8 @@ ul.city li {
 .reason-345 {
   background-color: var(--basic-gray);        
   display: grid;
-  grid-template-columns: 400px 400px 400px;  
-  grid-template-rows: 256px;                           
-  height: 256px;
+  grid-template-columns: 400px 400px 400px;                             
+  min-height: 256px;
   list-style: none;
   padding: 0;
 }
@@ -360,7 +360,7 @@ ul.city li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 155px;
+  min-height: 155px;
   margin-top: 46px;
   margin: auto;
   box-sizing: border-box;
@@ -371,7 +371,7 @@ ul.city li {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box; 
-  height: 155px;
+  min-height: 155px;
   margin: auto;
   margin-top: 46px;
 }
@@ -382,13 +382,13 @@ ul.city li {
   align-items: center;
   margin: auto;
   margin-top: 46px;
-  height: 155px;
+  min-height: 155px;
   box-sizing: border-box;
 }
 
 .reason-345 p{
   width: 265px;
-  height: 43px;
+  min-height: 43px;
   margin-top: 25px;
 }
 
@@ -474,7 +474,6 @@ ul.city li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 458px;
 }
 
 .search-label input {
@@ -490,7 +489,6 @@ ul.city li {
   line-height: 26px;
   font-weight: 700;
   margin-top: 0;
-  display: flex;
 }
 
 .input-arrivals {
@@ -634,7 +632,7 @@ form input:focus {
   justify-content: space-between;
   padding-left: 27px;
   position: relative;
-  margin-right: 126px;
+  margin-right: 137px;
   padding-bottom: 5px;
   box-sizing: border-box;
 }
@@ -650,23 +648,23 @@ form input:focus {
   position: absolute;
 }
 
-.infrastructure legend{
-  right: 12px;
-}
-
 .infrastructure-type legend{
   margin-bottom: 24px;
-  bottom: 5px;
+  right: 13px;
   position: relative;
 }
 
-.check-box,
-.check-box:hover  {
-  background-image: url(../img/checkbox-off.svg);
+.check-box {
   width: 23px;
   height: 23px;
   position: absolute;
-  right: 75px;
+  right: 85px;
+  bottom: 95px;
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.check-box:hover  {
+  background-image: url(../img/checkbox-off.svg);
 }
 
 .check-input:checked + .check-box {
@@ -674,26 +672,22 @@ form input:focus {
 }
 
 .check-input:disabled + .check-box {
-  background-image: 
+  background-image: url(../img/checkbox-off.svg);
 }
 
-/*.infrastructure-type span{
-  margin-right: 10px;
- /* width: 27px;
-  height: 23px;
+.check-input:checked:disabled + .check-box {
+  background-image: url(../img/checkbox-on.svg);
 }
 
-.infrastructure-list label span:nth-of-type(2){
-  position: absolute;
-  right: 75px;
-  bottom: 68px;
+.check-parking,
+.check-motel {
+  bottom: 48px;
 }
 
-.infrastructure-list span:nth-of-type(3),
-.type-list span:nth-of-type(3)  {
-  position: absolute;
-  bottom: 3px;
-}*/
+.check-wf,
+.check-apart {
+  bottom: 4px;
+}
 
 .form-sorting button {
   width: 137px;
@@ -713,31 +707,38 @@ form input:focus {
   right: 75px;
   bottom: 48px;
 }
+
 .type-list span {
   margin-right: 27px;
 }
+
 .cost {
   height: 158px;
   width: 317px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   margin-left: 347px;
+  position: relative;
 }
+
 .cost legend{
-  align-self: flex-start;
   margin-bottom: 11px;
+  margin-right: 76px;
+  position: absolute;
+  bottom: 131px;
+  right: 163px;
 }
+
 .min-max {
   display: flex;
   width: 317px;
   color: inherit;
+  position: absolute;
+  bottom: 83px;
 }
 
 .cost button {
-  margin-top: 33px;
-  align-self: center;
+  position: absolute;
+  bottom: 5px;
+  right: 109px;
 }
 
 .form-sorting fieldset {
@@ -826,9 +827,6 @@ form input:focus {
 /* hotels*/
 
 .hotels {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr; 
-  grid-template-columns: 1fr;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -837,7 +835,7 @@ form input:focus {
 
 .hotels li {
   display: flex;
-  height: 151px;
+  min-height: 151px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 73px;
@@ -856,7 +854,7 @@ form input:focus {
 }
 
 .stars {
-  margin-left: 522px;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -887,11 +885,11 @@ form input:focus {
   line-height: 21px;
   text-transform: uppercase;
   width: 126px;
-  margin-top: 7px;
+  margin-top: 2px;
 }
 
 ul.hotels img {
- 
+  height: 100%;
   margin-right: 30px;
 }
 
@@ -994,15 +992,12 @@ ul.hotels img {
   margin-top: 9px;
 }
 
-
-
 .links .navigation {
   display: flex;
   margin-top: 36px;
   margin-bottom: 36px;
   padding: 0;
   justify-content: center;
-
 }
 
 .links li {
