@@ -28,59 +28,44 @@
            <section> 
              <h2 class="visually-hidden">Форма сортировки результатов поиска гостиницы</h2> 
              <form action="https://echo.htmlacademy.ru/" method="get" class="form-sorting">
+
               <div class="infrastructure-type">
-                 <fieldset >
-                  
+                 <fieldset >                  
                   <legend>Инфраструктура:</legend>
                   <div class="infrastructure-list">                  
-                     <label for="view-pool">Бассейн
-                      <input class="check-input visually-hidden" type="checkbox" name="pool" id="view-pool" checked>
-                      <span class="check-box check-pool"></span>
-                     </label>
-                     
-                     <label for="view-parking">Парковка
-                      <input class="check-input visually-hidden" type="checkbox" name="parking" id="view-parking">
-                      <span class="check-box check-parking"></span>
-                     </label>
-                     
-                     <label for="view-wf">wi-fi
-                      <input class="check-input visually-hidden" type="checkbox" name="wi-fi" id="view-wf">
-                      <span class="check-box check-wf"></span>
-                     </label>  
+                      <input class="check-box visually-hidden" type="checkbox" name="pool" id="view-pool" checked>                     
+                      <label for="view-pool">Бассейн</label>
+                      <input class="check-box visually-hidden" type="checkbox" name="parking" id="view-parking">                      
+                      <label for="view-parking">Парковка</label>                                         
+                      <input class="check-box visually-hidden" type="checkbox" name="wi-fi" id="view-wf">                     
+                      <label for="view-wf">wi-fi</label>  
                      </div>                     
-                  
                  </fieldset>
                  <fieldset>
-                  
                   <legend>Тип жилья:</legend>
                   <div class="type-list">
-                     
-                     <label for="view-hotel">Гостиница
-                      <input class="check-input visually-hidden" type="checkbox" name="hotel" id="view-hotel" checked>
-                      <span class="check-box check-hotel"></span>
-                     </label>
-                     
-                     <label for="view-motel">Мотель
-                      <input class="check-input visually-hidden" type="checkbox" name="motel" id="view-motel" checked>
-                      <span class="check-box check-motel"></span>
-                     </label>
-                     
-                     <label for="view-apartments">Апартаменты
-                      <input class="check-input visually-hidden" type="checkbox" name="apartments" id="view-apartments" checked>
-                      <span class="check-box check-apart"></span>
-                     </label>
+                      <input class=" check-box visually-hidden" type="checkbox" name="hotel" id="view-hotel" checked>
+                      <label for="view-hotel">Гостиница</label>                   
+                      <input class="check-box visually-hidden" type="checkbox" name="motel" id="view-motel" checked>                   
+                      <label for="view-motel">Мотель</label>                     
+                      <input class="check-box visually-hidden" type="checkbox" name="apartments" id="view-apartments" checked>                      
+                      <label for="view-apartments">Апартаменты</label>
                     </div>
-                  </div>
-                  
+                  </div>                 
                  </fieldset>
-                 <fieldset>
-                  <div class="cost">
+                 
+                 <fieldset class="cost">                 
                     <legend>Стоимость в сутки (p):</legend> 
                     <div class="min-max">
                       <label class="min"><input type="text" name="min" value="от 0"></label>
                       <label class="max"><input type="text" name="max" value="до 3000"></label>
                     </div> 
-                    <input type="range" name="range" id="id-range" min="0" max="3000" value="3000">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>          
                     <button type="submit">Показать</button>  
                   </div>
                  </fieldset>   
@@ -169,9 +154,9 @@
         </div>
         <div class="links">
           <ul class="navigation">
-            <li><a href="" aria-label="ссылка на твиттер"></a></li>    
-            <li><a href="" aria-label="ссылка на фейсбук"></span></a></li>
-            <li><a href="" aria-label="ссылка на ютуб"></a></li>
+            <li><a href="" aria-label="ссылка на твиттер"><img src="img/twitter.svg" alt="twitter"></a></li>    
+            <li><a href="" aria-label="ссылка на фейсбук"><img src="img/fb-icon.svg" alt="facebook"></a></li>
+            <li><a href="" aria-label="ссылка на ютуб"><img src="img/youtube.svg" alt="youtube"></a></li>
           </ul>
         </div>
         <div class="link-academy">
