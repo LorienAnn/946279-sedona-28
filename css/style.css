@@ -548,6 +548,14 @@ ul.city li {
   margin: 0; 
 }
 
+.people button:hover {
+  color: var(--basic-black);
+}
+
+.people button:active {
+  color: var(--basic-blue);
+}
+
 .adult-label{
   margin-right: 40px; 
 }
@@ -700,16 +708,12 @@ form input:focus {
   background-image: url(../img/checkbox-on.svg); 
 }
 
-.check-box:disabled+ label::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/checkbox-off.svg); 
-  background-color: var(--checking-gray);
+.check-box:disabled + label::before {
+  background-image: url(../img/checkbox-off-disabled.svg);
 }
 
-.check-box:checked:disabled+ label::before {
-  background-image: url(../img/checkbox-off.svg); 
-  background-color: var(--checking-gray);
+.check-box:checked:disabled + label::before {
+  background-image: url(../img/checkbox-on-disabled.svg);
 }
 
 .cost {
@@ -1096,6 +1100,8 @@ ul.hotels img {
 
 /*   footer   */
 
+
+
 .footer {
   display: grid;
   width: 1200px;
@@ -1180,17 +1186,6 @@ li:active img {
   width: 82px;                           
 }
 
-.link-academy:hover img {
 
-}
-/* SOS
-
--В пиксельперфект всё криво и вся страница съезжает. Всё перепроверила в body, всёравно съезжает
--как-то слишком много стилей, особенно в списках или это нормально? Может, как вариант, доделать как доделывается, а потом 
-попытаться оптимизировать и удалить всё лишнее? Хотя, по идее лучше сразу не плодить лишнее, но я пытаюсь что-нибудь убрать (в тех же списках) и всё совсем плывёт
--Весь текст- uppercase - может его можно вынести в :root ?
--Я думаю карту и форму поиска завернуть в один див и сделать его флекс-контейнером, а их уже спозиционировать с помощью position и z-index ? Ил их можно вообще не заворачивать в див и без флексов попробовать? 
-
-*/
 
 
