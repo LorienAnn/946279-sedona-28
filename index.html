@@ -127,18 +127,24 @@
                     <label class="search-label"><span>Дата выезда:</span><input type="text" name="departure" value="4 июля 2017"><img src="img/calendar.svg"></label>
                   </p>
                 </div>
+
                 <p class="people">
-                  <label for="amount-adults" class="adults-label">
-                    <span>Взрослые:</span>
-                    <input type="number" min="1" max="10" name="adults" value="2" id="amount-adults">
-                  </label>      
+                  
+                  <label for="amount-adults" class="adult-label" >
+                    Взрослые:</label> 
+                    <button>&mdash;</button>
+                    <input type="text" name="adults" value="2" id="amount-adults">
+                    <button class="button-people">+</button>
+                   
                   
                   <label for="amount-children" class="child-label">
-                    <span>Дети:</span>
-                    <input type="number" min="0" max="10" name="children" value="0" id="amount-children">
-                  </label>
+                    Дети:</label> 
+                    <button>&mdash;</button>
+                    <input type="text" name="children" value="0" id="amount-children">
+                    <button>+</button>
                   
                 </p>
+
                 <button type="submit" class="search">Найти</button> 
               </fieldset>
             </form>
