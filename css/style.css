@@ -585,6 +585,7 @@ ul.city li {
 
 .button-brown:active {
   background-color: var(--active-brown);
+  color: var(--opacity-white-light);
 } 
 
 form input:hover {
