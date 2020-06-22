@@ -11,6 +11,8 @@
   </head>
 
   <body>
+
+
       <header>
       <nav class="main-navigation">
           <ul class="navigation site-navigation">
@@ -22,6 +24,7 @@
           <a class="logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип"></a>
       </nav>
       </header>
+
 
       <main class="main-index">
         
@@ -107,53 +110,48 @@
             </ul> 
             </ul>
         </section>
+
         <div class="search-map">
-        <section class="search-form">
-          <h2 class="visually-hidden">Форма поиска гостиницы в городе Седона</h2>
-          <div class="search-intro">
-            <p class="uppercase">Заинтересовались?</p>
-            <p>Укажите предполагаемые даты поездки,<br>
-               и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          </div> 
+          <section class="search-form">
+            <h2 class="visually-hidden">Форма поиска гостиницы в городе Седона</h2>
+            <div class="search-intro">
+              <p class="uppercase">Заинтересовались?</p>
+              <p>Укажите предполагаемые даты поездки,<br>
+                 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            </div> 
+
           <div class="window">
             <button class="button-brown">Поиск гостиницы в Седоне</button>
             <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="fieldset">  
                  <div class="arrival-departures">
-                  <p class="input-arrivals">
-                    <label class="search-label"><span>Дата заезда:</span><input type="text" name="arrival" value="24 апреля 2017"><img src="img/calendar.svg"></label>
-                  </p>
-                  <p class="input-departures">
-                    <label class="search-label"><span>Дата выезда:</span><input type="text" name="departure" value="4 июля 2017"><img src="img/calendar.svg"></label>
-                  </p>
-                </div>
-
-                <p class="people">
-                  
-                  <label for="amount-adults" class="adult-label" >
-                    Взрослые:</label> 
-                    <button>&mdash;</button>
-                    <input type="text" name="adults" value="2" id="amount-adults">
-                    <button class="button-people">+</button>
-                   
-                  
-                  <label for="amount-children" class="child-label">
-                    Дети:</label> 
-                    <button>&mdash;</button>
-                    <input type="text" name="children" value="0" id="amount-children">
-                    <button>+</button>
-                  
+                    <p class="input-arrivals">
+                      <label class="search-label"><span>Дата заезда:</span><input type="text" name="arrival" value="24 апреля 2017"><img src="img/calendar.svg"></label>
+                    </p>
+                    <p class="input-departures">
+                      <label class="search-label"><span>Дата выезда:</span><input type="text" name="departure" value="4 июля 2017"><img src="img/calendar.svg"></label>
+                    </p>
+                 </div>
+                <p class="people">   
+                  <label for="amount-adults" class="adult-label" >Взрослые:</label> 
+                  <button>&mdash;</button>
+                  <input type="text" name="adults" value="2" id="amount-adults">
+                  <button class="button-people">+</button>
+                  <label for="amount-children" class="child-label">Дети:</label> 
+                  <button>&mdash;</button>
+                  <input type="text" name="children" value="0" id="amount-children">
+                  <button>+</button>                  
                 </p>
-
                 <button type="submit" class="search">Найти</button> 
               </fieldset>
             </form>
           </div> 
         </section> 
-      <section class="map">
+
+       <section class="map">
        <img src="img/map.jpg" width="1199" height="594" alt="карта местности">  
       </section> 
-    </div>  
+        </div>  
       </main>
 
       <footer class="footer">
@@ -164,8 +162,8 @@
           </div>
           <div class="links">
             <ul class="navigation">
-              <li><a href="https://twitter.com/" aria-label="ссылка на твиттер" target="_blank"><img src="img/twitter.svg" alt="twitter"></a></li>
-              <li><a href="https://www.facebook.com/" aria-label="ссылка на фейсбук" target="_blank"><img src="img/fb-icon.svg" alt="facebook"></a></li>
+              <li><a href="https://twitter.com/" aria-label="ссылка на твиттер" target="_blank"><img src="img/twitter.svg" alt="twitter"></a></li> <!--Тут и где ссылка на академию, я пока не разобралась как менять цвета свг, в случае, когда свг вставлены в разметку, а не как background-image в css-->
+              <li><a href="https://www.facebook.com/" aria-label="ссылка на фейсбук" target="_blank"><img src="img/fb-icon.svg" alt="facebook"></a></li> 
               <li><a href="https://www.youtube.com/" aria-label="ссылка на ютуб" target="_blank"><img src="img/youtube.svg" alt="youtube"></a></li>
             </ul>
           </div>

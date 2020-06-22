@@ -413,6 +413,7 @@ ul.city li {
 .reason-345 span {
   font-size: 14px; 
 }
+
 .advantages-list span {
   margin-top: 25px;
 }
@@ -619,12 +620,11 @@ form input:focus {
 
 .search:active {
   background-color: var(--active-blue);
+  color: var(--opacity-white-light);
 }
 
 
-
 /*****     catalog       *****/
-
 
 
 .hotels-catalog {
@@ -741,9 +741,9 @@ form input:focus {
   border-radius: 2px;
   border: 2px solid var(--basic-white);
   top: 27px;
-  left: -11px;
-    
+  left: -11px;  
 }
+
 .min-max input {
   background-color: inherit;
   border: none;
@@ -766,7 +766,7 @@ form input:focus {
   right: 154px;
 }
 
- .range-controls {
+.range-controls {
    position: relative;
  } 
 
@@ -798,11 +798,13 @@ form input:focus {
   top: -9px;
   cursor: pointer;
 }
+
 .range-controls .toggle:hover {
   width: 5px;
   height: 5px;
   border: 9px solid var(--basic-white);
 }
+
 .range-controls .toggle-min {
   left: -10px;
 }
@@ -853,7 +855,7 @@ form input:focus {
 }
 
 .rotation {
-  list-style: none;
+  list-style: none;    
   display: flex;
 }
 
@@ -864,7 +866,7 @@ form input:focus {
   border-bottom: 1px dotted var(--basic-blue);
 }
 
-.rotation li:first-child {
+.rotation li:first-child {   /*В макете он голубого цвета, но такой цвет при нажатии, но это ссылка и мы итак на нужной странице, тут я не разобралась*/
   margin-right: 32px;
 }
 
@@ -895,7 +897,7 @@ form input:focus {
 }
 
 .up,
-.down {
+.down {                               /*В макете .down голубого цвета, но такой цвет при нажатии, но это ссылка и мы итак на нужной странице, тут я не разобралась*/
   width: 12px;
   height: 10px;
   position: absolute;
@@ -926,7 +928,6 @@ form input:focus {
 .down:active {
   background-image: url(../img/icon-down-dir-blue.svg);
 }
-
 
 /* hotels*/
 
