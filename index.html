@@ -21,7 +21,7 @@
               <li><a href="#">Карта штата</a></li>
               <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
-          <a class="logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип"></a>
+          <a href="#" class="logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип"></a>
       </nav>
       </header>
 
@@ -122,9 +122,9 @@
                  и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             </div> 
 
-          <div class="window">
             <button class="button-brown">Поиск гостиницы в Седоне</button>
-            <form action="https://echo.htmlacademy.ru" method="get">
+
+            <form action="https://echo.htmlacademy.ru" method="get" class="form-hotels">
               <fieldset class="fieldset">  
                  <div class="arrival-departures">
                     <p class="input-arrivals">
@@ -136,18 +136,18 @@
                  </div>
                 <p class="people">   
                   <label for="amount-adults" class="adult-label" >Взрослые:</label> 
-                  <button>&mdash;</button>
+                  <button type="submit">&mdash;</button>
                   <input type="text" name="adults" value="2" id="amount-adults">
-                  <button class="button-people">+</button>
+                  <button class="button-people" type="submit">+</button>
                   <label for="amount-children" class="child-label">Дети:</label> 
-                  <button>&mdash;</button>
+                  <button type="submit">&mdash;</button>
                   <input type="text" name="children" value="0" id="amount-children">
-                  <button>+</button>                  
+                  <button type="submit">+</button>                  
                 </p>
                 <button type="submit" class="search">Найти</button> 
               </fieldset>
             </form>
-          </div> 
+          
         </section> 
 
        <section class="map">
@@ -177,7 +177,10 @@
           </div>
       </footer>
     
+<script src="js/JavaScript.js">
+</script>
 
   </body>
+
 
 </html>

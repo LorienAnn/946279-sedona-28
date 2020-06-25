@@ -459,11 +459,14 @@ ul.city li {
   margin-top: 0;
 }
 
-.window {
-  height: 481px;
-  width: 568px;
-  box-sizing: border-box;
-  margin: 0;
+.form-hotels {
+  width:458px ;
+  height: 340px;
+  display: block;
+}
+
+.form-hotels-none {
+  display: none;
 }
 
 .fieldset {
@@ -694,23 +697,37 @@ form input:focus {
   bottom: 48px;
 }
 
-.check-box + label::before {
+/*.check-box + label::before {
   content: "";
   position: absolute;
   left: -15px;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg); 
+}*/
+
+.check-box + label::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  width: 19px;
+  height: 19px;
+  border: solid var(--basic-white) 2px;
+  border-radius: 3px;
 }
 
  .check-box:checked + label::before {
   content: "";
   position: absolute;
-  background-image: url(../img/checkbox-on.svg); 
+  background-image: url(../img/checkbox-on.svg);
+  border: none;
+  border-radius: none;
+  width: 26px;
+  height: 23px;
 }
 
 .check-box:disabled + label::before {
-  background-image: url(../img/checkbox-off-disabled.svg);
+  background-color: var(--checking-gray) ;
 }
 
 .check-box:checked:disabled + label::before {
