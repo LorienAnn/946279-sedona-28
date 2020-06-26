@@ -759,7 +759,7 @@ form input:focus {
 .range-controls .scale { 
   background: var(--basic-white);
   margin-top: 25px;
-  width: 250px;
+  width: 260px;
   height: 2px;
 }
 
@@ -773,8 +773,8 @@ form input:focus {
 }
 
 .range-controls .toggle {
-  width: 4px;
-  height: 4px;
+  width: 3px;
+  height: 3px;
   padding: 0;
   border: 8px solid var(--basic-white);
   background-color: var(--toggle);
@@ -848,7 +848,7 @@ form input:focus {
   border-bottom: 1px dotted var(--basic-blue);
 }
 
-.rotation li:first-child {   /*В макете он голубого цвета, но такой цвет при нажатии, но это ссылка и мы итак на нужной странице, тут я не разобралась*/
+.rotation li:first-child {  
   margin-right: 32px;
 }
 
@@ -880,28 +880,32 @@ form input:focus {
   margin-right: 73px;
   margin-left: auto;
   position: relative;
-  top: 3px;
+  
 }
 
 .up,
-.down {                               /*В макете .down голубого цвета, но такой цвет при нажатии, но это ссылка и мы итак на нужной странице, тут я не разобралась*/
+.down {                               
   width: 12px;
   height: 10px;
   position: absolute;
-  background-repeat: no-repeat;
+  fill: var(--updown-gray);
 }
 
 .down {
   left: 23px;
 }
 
-.up:hover,
-.down:hover  {
-  stroke: var(--basic-black);
+.up-down .up:hover,
+.up-down .down:hover  {
+  fill: var(--basic-black);
 }
 
 .up:active,
 .down:active {
+  fill: var(--basic-blue);
+}
+
+.up-down .sort  {
   fill: var(--basic-blue);
 }
 
@@ -948,13 +952,19 @@ form input:focus {
   color: var(--booking-brown); 
 }
 
-.stars span:first-child {
-  background-image: url(../img/star.svg);
-  height: 17px;
-  background-repeat: space;
+.star-rating {
+  display: flex;
+  justify-content: flex-end;
+}
+.star-rating img {
+  margin-left: 5px;
+  position: relative;
+    right: -2px;
+    top: -1px;
 }
 
-.four {
+
+/*.four {
   width: 88px;
   position: relative;
   left: 18px;
@@ -973,7 +983,7 @@ top: -2px;
   position: relative;
   left: 64px;
   top: -2px;
-}
+}*/
 
 .stars span:last-child {
   text-align: center;
@@ -1015,7 +1025,7 @@ top: -2px;
   margin-top: 2px;
 }
 
-ul.hotels img {
+ul.hotels .photo {
   height: 100%;
   margin-right: 30px;
 }
@@ -1095,7 +1105,7 @@ ul.hotels img {
 }
 
 .footer-index {
-  bottom: -1973px;
+  bottom: -2047px;
 }
 
 .footer a {
@@ -1161,6 +1171,7 @@ li:active svg {
   display: flex;
   align-items: center;
   padding-left: 65px;
+  fill: black;
 }
 
 .link-academy p {
