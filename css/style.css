@@ -420,9 +420,6 @@ ul.city li {
 
 /* Search form*/
 
-.search-map {
-  padding-bottom: 78px;
-}
 
 .search-form {
   background-color: var(--basic-white);
@@ -436,13 +433,6 @@ ul.city li {
   margin-left: 316px;
   margin-right: 316px;
   margin-top: 58px;
-  position: relative;
-  z-index: 5;
-}
-
-.map {
-  position: absolute;
-  top: 2170px;
 }
 
 .search-intro {
@@ -463,6 +453,8 @@ ul.city li {
   width:458px ;
   height: 340px;
   display: block;
+  position: absolute;
+  
 }
 
 .form-hotels-none {
@@ -472,9 +464,10 @@ ul.city li {
 .fieldset {
   width: 458px;
   height: 285px;
-  margin: 55px;
+  margin: 0px;
   border: none;
-  padding: 0;
+  padding: 55px;
+  background-color: var(--basic-white);
 }
 
 .search-label {
@@ -504,14 +497,14 @@ ul.city li {
 
 .input-arrivals img {
   position: absolute;
-  bottom: 310px;
-  right: 64px;
+  bottom: 255px;
+  right: -46px;
 }
 
  .input-departures img {
    position: absolute;
-   right: 64px;
-   bottom: 243px;
+   right: -46px;
+   bottom: 188px;
  }
 
  .input-departures {
@@ -691,21 +684,6 @@ form input:focus {
   position: relative;
 }
 
-.type-list span:nth-of-type(2) {
-  position: absolute;
-  right: 75px;
-  bottom: 48px;
-}
-
-/*.check-box + label::before {
-  content: "";
-  position: absolute;
-  left: -15px;
-  width: 23px;
-  height: 23px;
-  background-image: url(../img/checkbox-off.svg); 
-}*/
-
 .check-box + label::before {
   content: "";
   position: absolute;
@@ -727,7 +705,7 @@ form input:focus {
 }
 
 .check-box:disabled + label::before {
-  background-color: var(--checking-gray) ;
+  border-color: var(--checking-gray) ;
 }
 
 .check-box:checked:disabled + label::before {
@@ -737,16 +715,8 @@ form input:focus {
 .cost {
   height: 158px;
   width: 317px;
-  margin-left: 347px;
+  margin-left: 337px;
   position: relative;
-}
-
-.cost legend{
-  margin-bottom: 11px;
-  margin-right: 75px;
-  position: absolute;
-  bottom: 139px;
-  right: 149px;
 }
 
 .min-max {
@@ -757,8 +727,7 @@ form input:focus {
   height: 33px;
   border-radius: 2px;
   border: 2px solid var(--basic-white);
-  top: 27px;
-  left: -11px;  
+  top: 5px;  
 }
 
 .min-max input {
@@ -789,8 +758,8 @@ form input:focus {
 
 .range-controls .scale { 
   background: var(--basic-white);
-  margin-top: 47px;
-  width: 248px;
+  margin-top: 25px;
+  width: 250px;
   height: 2px;
 }
 
@@ -800,7 +769,7 @@ form input:focus {
   width: 54px;
   height: 2px;
   position: absolute;
-  right: 15px;
+  right: 0px;
 }
 
 .range-controls .toggle {
@@ -822,18 +791,14 @@ form input:focus {
   border: 9px solid var(--basic-white);
 }
 
-.range-controls .toggle-min {
-  left: -10px;
-}
-
 .range-controls .toggle-max {
-  right: 56px;
+  right: 45px;
 }
 
 .cost button {
   position: absolute;
   bottom: -69px;
-  right: 106px;
+  right: 96px;
   width: 137px;
   height: 36px;
   padding-top: 7px;
@@ -888,7 +853,7 @@ form input:focus {
 }
 
 .rotation li:nth-child(2) {
-  margin-right: 33px;
+  margin-right: 32px;
 }
  
 .rotation a:focus {
@@ -901,6 +866,11 @@ form input:focus {
 
 .rotation a:active {
   color: var(--basic-black);
+  border: none;
+}
+
+.sort a {
+  color: var(--basic-blue);
   border: none;
 }
 
@@ -921,30 +891,20 @@ form input:focus {
   background-repeat: no-repeat;
 }
 
-.up {
-  background-image: url(../img/icon-up-dir.svg);
-}
-
 .down {
-  background-image: url(../img/icon-down--dir.svg);
   left: 23px;
 }
 
-.up:hover {
-  background-image: url(../img/icon-up-dir-black.svg);
+.up:hover,
+.down:hover  {
+  stroke: var(--basic-black);
 }
 
-.down:hover {
-  background-image: url(../img/icon-down-dir-black.svg);
-}
-
-.up:active {
-  background-image: url(../img/icon-up-dir-blue.svg);
-}
-
+.up:active,
 .down:active {
-  background-image: url(../img/icon-down-dir-blue.svg);
+  fill: var(--basic-blue);
 }
+
 
 /* hotels*/
 
@@ -1134,6 +1094,10 @@ ul.hotels img {
   background-color: var(--opacity-white);
 }
 
+.footer-index {
+  bottom: -1973px;
+}
+
 .footer a {
   color: var(--basic-black);
 }
@@ -1186,7 +1150,7 @@ ul.hotels img {
   background-color: var(--active-blue);
 }
 
-li:active img {
+li:active svg {
   opacity: 0.3; 
 }
 
