@@ -53,6 +53,7 @@ body {
   background-color: var(--basic-white);
   color: var(--basic-black);
   box-sizing: border-box;  
+  position: relative;
   /*box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);*/
 }
  
@@ -478,10 +479,19 @@ ul.city li {
 }
 
 .search-label input {
-  height: 38px;
+  max-height: 38px;
   flex-grow: 1;
   margin-left: 20px;
   padding-left: 13px;
+}
+
+.search-label button{
+  border: none;
+  height: 23px;
+  position: absolute;
+  right: -46px;
+  padding: 0;
+  background-color: inherit;
 }
 
 .fieldset p {
@@ -495,18 +505,6 @@ ul.city li {
 .input-arrivals {
   margin-bottom: 29px;
 }
-
-.input-arrivals img {
-  position: absolute;
-  bottom: 255px;
-  right: -46px;
-}
-
- .input-departures img {
-   position: absolute;
-   right: -46px;
-   bottom: 188px;
- }
 
  .input-departures {
   margin-bottom: 27px;
@@ -776,7 +774,7 @@ form input:focus {
 .range-controls .toggle {
   width: 3px;
   height: 3px;
-  padding: 0;
+  padding: 2px;
   border: 8px solid var(--basic-white);
   background-color: var(--toggle);
   border-radius: 50%;
@@ -794,6 +792,10 @@ form input:focus {
 
 .range-controls .toggle-max {
   right: 45px;
+}
+
+.range-controls .toggle-min {
+  right: 297px;
 }
 
 .cost button {
@@ -816,6 +818,13 @@ form input:focus {
 .cost button:hover {
   background-color: var(--basic-white);
   color: var(--basic-black);
+}
+
+
+/* rusults*/
+
+.results {
+  position: relative;
 }
 
 .found {
@@ -881,7 +890,6 @@ form input:focus {
   margin-right: 73px;
   margin-left: auto;
   position: relative;
-  
 }
 
 .up,
@@ -911,7 +919,7 @@ form input:focus {
 }
 
 
-/* hotels*/
+/* hotels */
 
 .hotels {
   list-style: none;
@@ -957,34 +965,13 @@ form input:focus {
   display: flex;
   justify-content: flex-end;
 }
+
 .star-rating img {
   margin-left: 5px;
   position: relative;
     right: -2px;
     top: -1px;
 }
-
-
-/*.four {
-  width: 88px;
-  position: relative;
-  left: 18px;
-  top: -2px;
-}
-
-.three {
-width: 66px;
-position: relative;
-left: 40px;
-top: -2px;
-}
-
-.two {
-  width: 42px;
-  position: relative;
-  left: 64px;
-  top: -2px;
-}*/
 
 .stars span:last-child {
   text-align: center;
@@ -1097,7 +1084,7 @@ ul.hotels .photo {
   width: 1200px;
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 5;
-  position: absolute;
+  bottom: 0;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
@@ -1106,7 +1093,8 @@ ul.hotels .photo {
 }
 
 .footer-index {
-  bottom: -2021px;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer a {
@@ -1172,7 +1160,18 @@ li:active svg {
   display: flex;
   align-items: center;
   padding-left: 65px;
-  fill: black;
+}
+
+.path {
+  fill: var(--basic-black);
+}
+
+.path:hover {
+  fill: var(--basic-blue);
+}
+
+.path:active {
+  opacity: 0.3;
 }
 
 .link-academy p {
