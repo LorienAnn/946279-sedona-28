@@ -46,7 +46,7 @@ body {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Verdana, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -882,6 +882,7 @@ form input:focus {
 
 /* rusults*/
 
+
 .results {
   position: relative;
 }
@@ -979,6 +980,7 @@ form input:focus {
 
 
 /* hotels */
+
 
 .hotels {
   list-style: none;
@@ -1177,8 +1179,6 @@ ul.hotels .photo {
 .contacts a {
   margin-top: 9px;
 }
-
-
 
 .links .navigation {
   display: flex;
