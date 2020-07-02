@@ -469,7 +469,7 @@ ul.city li {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-568px);
+    transform: translateY(-481px);
   }
 
   70% {
@@ -486,6 +486,7 @@ ul.city li {
 }
 
 .form-show-bounce {
+  
   animation: bounce 1s;
 }
 
