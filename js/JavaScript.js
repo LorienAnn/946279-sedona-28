@@ -18,16 +18,16 @@ button.addEventListener("click", function (evt) {
   arrivals.focus(); 
 });
 
-button.addEventListener("click", function (evt) {    /* Не получается :( */
+button.addEventListener("click", function (evt) {    
   evt.preventDefault();
-  form.classList.toggle ("form-show");
-  /*form.classList.toggle ("form-show-bounce");*/
+  form.classList.toggle ("form-hotels-none");
+  form.classList.toggle ("form-show-bounce");
   arrivals.focus(); 
 });
 
 form.addEventListener("submit", function (evt) {     
   if(!arrivals.value || !departures.value) {
   evt.preventDefault();
-  form.classList.add ("form-error")              /*и тут не получается :( */
+  form.classList.add ("form-error")              /* тут не получается :( */
 } 
 });
