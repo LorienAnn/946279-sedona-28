@@ -16,6 +16,7 @@
   --active-blue: #5496BD;
   --active-brown: #503E33; 
 
+
   /*мелкие иконки: календарь и +/- */
 
   --basic-icon-gray: #A9A9A9;
@@ -40,6 +41,12 @@
   overflow: hidden;
 }
 
+.container {
+  background-color:var(--basic-white);
+  width: 1200px;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
 body {
   min-height: 100vh;
   width: 1280px;
@@ -50,17 +57,12 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  background-color: var(--basic-white);
+  background-color: var(--basic-light-gray);
   color: var(--basic-black);
   box-sizing: border-box;  
   position: relative;
 }
 
-header,
-main,
-footer {
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-}
 
 a {
   text-decoration: none;
@@ -253,6 +255,10 @@ ul.city {
   padding: 0;
 }
 
+.city img {
+  margin: auto;
+}
+
 ul.city li {
   width: 400px;
 }
@@ -266,7 +272,6 @@ ul.city li {
 }
 
 .housing  {                              
-  min-inline-size: 188px;
   margin-top: 60px;                              
   margin-bottom: 82px;
   display: flex;
@@ -431,7 +436,7 @@ ul.city li {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  width: 568px;
+  min-width: 568px;
   margin: 0;
   padding: 0;
   margin-left: 316px;
@@ -454,13 +459,14 @@ ul.city li {
 }
 
 .form-hotels {
-  width:458px ;
-  height: 340px;
+  min-width:458px ;
+  min-height: 340px;
   display: block;
   position: absolute;
   z-index: 2;
   animation: bounce 1s;
 }
+
  /* оживление формы*/
 
 .form-hotels-none {
@@ -515,8 +521,8 @@ ul.city li {
 /**/
 
 .fieldset {
-  width: 458px;
-  height: 285px;
+  min-width: 458px;
+  min-height: 285px;
   margin: 0px;
   border: none;
   padding: 55px;
@@ -542,7 +548,7 @@ ul.city li {
   border: none;
   height: 23px;
   position: absolute;
-  right: -46px;
+  right: 64px;
   padding: 0;
   background-color: inherit;
 }
@@ -1232,7 +1238,7 @@ li:active svg {
   fill: var(--basic-black);
 }
 
-.path:hover {
+.logo-academy:hover .path {
   fill: var(--basic-blue);
 }
 

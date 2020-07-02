@@ -18,6 +18,12 @@ button.addEventListener("click", function (evt) {
   arrivals.focus(); 
 });
 
+/*button.addEventListener("click", function (evt) {
+  if("form-hotels-none") {
+    evt.preventDefault();
+    form.classList.add("form-hotels");
+    arrivals.focus();
+  });
       /*в лекции и демонстрациях форма открывается и закрывается разными кнопками, а не одной. 
         а у меня одна кнопка, и тогда используется toggle, либо надо как-то указать,
         что при нажатии, если форма открыта, то скрыть, а если скрыта то открыть...
@@ -30,6 +36,6 @@ button.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {     
   if(!arrivals.value || !departures.value) {
   evt.preventDefault();
-  form.classList.add ("form-error")              /* тут не получается :( */
+  form.classList.add ("form-error");              /* тут не получается :( */
 } 
 });
