@@ -459,7 +459,7 @@ ul.city li {
   display: block;
   position: absolute;
   z-index: 2;
-  
+  animation: bounce 1s;
 }
  /* оживление формы*/
 
@@ -485,10 +485,6 @@ ul.city li {
   }
 }
 
-.form-show-bounce {
-  
-  animation: bounce 1s;
-}
 
 @keyframes shake {
   0%,

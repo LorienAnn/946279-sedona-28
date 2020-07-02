@@ -18,18 +18,18 @@ button.addEventListener("click", function (evt) {
   arrivals.focus(); 
 });
 
-button.addEventListener("click", function (evt) {        /*в лекции и демонстрациях форма открывается и закрывается разными кнопками, а не одной. 
+/*button.addEventListener("click", function (evt) {        /*в лекции и демонстрациях форма открывается и закрывается разными кнопками, а не одной. 
                                                             а у меня одна кнопка, и тогда используется toggle, либо надо как-то указать,
                                                             что при нажатии, если форма открыта, то скрыть, а если скрыта то открыть...
                                                             но я не знаю как это сделать тк этого не показывали, а сама я и if пыталась использовать 
                                                             и добавлять новые классы и тд, но не выходит( а когда я использу toggle то не получается 
-                                                              её плавно открыть*/
+                                                              её плавно открыть
   evt.preventDefault();
   form.classList.toggle ("form-hotels-none");
-  form.classList.toggle ("form-show-bounce");
+  
   arrivals.focus(); 
 });
-
+*/
 form.addEventListener("submit", function (evt) {     
   if(!arrivals.value || !departures.value) {
   evt.preventDefault();
