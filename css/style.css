@@ -185,6 +185,8 @@ ul.site-navigation li:nth-child(4n+4) {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .intro {
@@ -425,9 +427,14 @@ ul.city li {
 
 /* Search form*/
 
+.search-map {
+  position: relative;
+  z-index: 1;
+}
+
 .map iframe{
   position: absolute;
-  right: 40px;
+  right: 0px;
 }
 
 .search-form {
@@ -442,6 +449,8 @@ ul.city li {
   margin-left: 316px;
   margin-right: 316px;
   margin-top: 58px;
+  
+  
 }
 
 .search-intro {
@@ -449,6 +458,9 @@ ul.city li {
   height: 145px;
   text-align: center;
   margin: auto;
+  position: relative;
+  z-index: 3;
+  background-color: var(--basic-white);
 }
 
 .uppercase {
@@ -463,8 +475,9 @@ ul.city li {
   min-height: 340px;
   display: block;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   animation: bounce 1s;
+
 }
 
  /* оживление формы*/
@@ -632,6 +645,8 @@ ul.city li {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+  position: relative;
+  z-index: 3;
 }
 
 .button-brown:hover,

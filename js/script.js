@@ -10,7 +10,7 @@ var button = document.querySelector(".button-brown");
 var form = document.querySelector(".form-hotels");
 var arrivals = document.querySelector(".input-form-arrivals");
 var departures = document.querySelector(".input-form-departures");
-var form = document.querySelector (".form-hotels");
+
  
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -36,6 +36,7 @@ button.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {     
   if(!arrivals.value || !departures.value) {
   evt.preventDefault();
-  form.classList.add ("form-error");              /* тут не получается :( */
+  form.classList.add("form-error");  
+  arrivals.focus();             
 } 
 });
