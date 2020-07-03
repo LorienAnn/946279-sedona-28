@@ -459,7 +459,7 @@ ul.city li {
   padding-left: 67px;
   padding-right: 67px;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   background-color: var(--basic-white);
 }
 
