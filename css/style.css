@@ -19,6 +19,7 @@
 
   /*мелкие иконки: календарь и +/- */
 
+
   --basic-icon-gray: #A9A9A9;
   --hover-icon-black: #000000;
   --active-icon-blue: #81B3D2;
@@ -62,7 +63,6 @@ body {
   box-sizing: border-box;  
   position: relative;
 }
-
 
 a {
   text-decoration: none;
@@ -186,7 +186,7 @@ ul.site-navigation li:nth-child(4n+4) {
   margin-right: auto;
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .intro {
@@ -395,7 +395,7 @@ ul.city li {
   box-sizing: border-box;
 }
 
-.reason-345 p{
+.reason-345 p {
   width: 265px;
   min-height: 43px;
   margin-top: 25px;
@@ -427,12 +427,13 @@ ul.city li {
 
 /* Search form*/
 
+
 .search-map {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.map iframe{
+.map iframe {
   position: absolute;
   right: 0px;
 }
@@ -449,15 +450,14 @@ ul.city li {
   margin-left: 316px;
   margin-right: 316px;
   margin-top: 58px;
-  
-  
 }
 
 .search-intro {
   width: 435px;
   height: 145px;
   text-align: center;
-  margin: auto;
+  padding-left: 67px;
+  padding-right: 67px;
   position: relative;
   z-index: 3;
   background-color: var(--basic-white);
@@ -481,7 +481,7 @@ ul.city li {
 
  /* оживление формы*/
 
- 
+
 .form-hotels-none {
   display: none;
 }
@@ -533,6 +533,7 @@ ul.city li {
 
 /**/
 
+
 .fieldset {
   min-width: 458px;
   min-height: 285px;
@@ -557,7 +558,7 @@ ul.city li {
   box-sizing: border-box;
 }
 
-.search-label button{
+.search-label button {
   border: none;
   height: 23px;
   position: absolute;
@@ -597,15 +598,19 @@ ul.city li {
   align-items: center;
   margin-bottom: 56px;
   width: 458px;
-  
 }
 
-.people input{
+.adult {
+  margin-right: 38px;
+}
+
+.people input {
   width: 38px;
   text-align: center;
+  margin-right: 0;
 }
 
-.people button{
+.people button {
   background-color: var(--basic-light-gray);
   border: none;
   height: 38px;
@@ -625,13 +630,13 @@ ul.city li {
   color: var(--basic-blue);
 }
 
-.adult-label{
+.adult-label {
   margin-right: 40px; 
 }
 
 .child-label {
   margin-left: 50px;
-  margin-right: 20px;
+  margin-right: 32px;
 }
 
 .button-brown {
@@ -752,7 +757,7 @@ form input:focus {
   margin-right: 100px; 
 }
 
-.infrastructure-type legend{
+.infrastructure-type legend {
   margin-bottom: 24px;
   right: 13px;
   position: relative;
@@ -928,7 +933,7 @@ form input:focus {
   display: flex;
 }
 
-.rotation a{
+.rotation a {
   color: var(--opacity-black);
   font-size: 12px;
   line-height: 18px;
