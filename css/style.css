@@ -477,11 +477,11 @@ ul.city li {
   position: absolute;
   z-index: 1;
   animation: bounce 1s;
-
 }
 
  /* оживление формы*/
 
+ 
 .form-hotels-none {
   display: none;
 }
