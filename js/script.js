@@ -9,6 +9,7 @@ form.classList.toggle("form-hotels-none");
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
   form.classList.toggle("form-hotels-none");
+  form.classList.remove("form-error");
   arrivals.focus(); 
 });
 
@@ -19,6 +20,7 @@ form.addEventListener("submit", function (evt) {
     form.offsetWidth = form.offsetWidth;
     form.classList.add("form-error");
     console.log("Необходимо ввести логин и пароль");
+    
     }           
 });
 
