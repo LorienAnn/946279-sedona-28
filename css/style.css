@@ -502,6 +502,7 @@ ul.city li {
   }
 
   90% {
+    transform: translateY(-10px);
   }
   
   100% {
