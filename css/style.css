@@ -441,6 +441,10 @@ ul.city li {
   right: 0px;
 }
 
+.frameborder {
+  border: 0;
+}
+
 .search-form {
   background-color: var(--basic-white);
   font-size: 14px;
@@ -504,7 +508,7 @@ ul.city li {
   90% {
     transform: translateY(-10px);
   }
-  
+
   100% {
     transform: translateY(0);
   }
@@ -549,21 +553,20 @@ ul.city li {
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
-.search-label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .search-label input {
   max-height: 38px;
-  flex-grow: 1;
   margin-left: 20px;
   padding-left: 13px;
   box-sizing: border-box;
+  width: 346px;
 }
 
-.search-label button {
+.input-arrivals input {
+  margin-left: 24px;
+}
+
+.input-arrivals button,
+.input-departures button {
   border: none;
   height: 23px;
   position: absolute;
@@ -578,6 +581,8 @@ ul.city li {
   line-height: 26px;
   font-weight: 700;
   margin-top: 0;
+  display: flex;
+  align-items: center;
 }
 
 .input-arrivals {
