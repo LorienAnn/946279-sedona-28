@@ -497,6 +497,13 @@ ul.city li {
     transform: translateY(-365px);
   }
 
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+  }
+  
   100% {
     transform: translateY(0);
   }

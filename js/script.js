@@ -24,8 +24,6 @@ form.addEventListener("submit", function (evt) {
 
 form.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (form.classList.contains("form-hotels")) {
-        form.classList.toggle("form-hotels-none");
-        }
+    form.classList.toggle("form-hotels-none");
   }
 });
