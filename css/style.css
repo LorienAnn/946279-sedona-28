@@ -216,6 +216,7 @@ ul.site-navigation li:nth-child(4n+4) {
   padding: 0;
   width: 1200px;
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 .reason-1 {     
@@ -325,6 +326,7 @@ ul.city li {
   font-size: 14px;
   line-height: 21px;
 }
+
 .reason-2 {
   background-color: var(--basic-blue); 
   display: flex;
@@ -404,6 +406,7 @@ ul.city li {
 .reason-345 p:nth-child(2) {
   width: 270px;
 }
+
 .reason-345 h3 {
   width: 119px;
   margin: 0;
@@ -440,27 +443,28 @@ ul.city li {
 
 .search-form {
   background-color: var(--basic-white);
-  text-align: center;
   font-size: 14px;
   line-height: 26px;
-  text-transform: uppercase;
-  min-width: 568px;
   margin: 0;
   padding: 0;
-  margin-left: 316px;
-  margin-right: 316px;
-  margin-top: 58px;
+  position: relative;
 }
 
 .search-intro {
-  width: 435px;
-  height: 145px;
+  width: 568px;
+  margin: 0 auto;
   text-align: center;
+  padding-top: 56px;
   padding-left: 67px;
   padding-right: 67px;
   position: relative;
   z-index: 2;
+  text-transform: uppercase;
   background-color: var(--basic-white);
+}
+
+.search-description {
+  margin-bottom: 43px;
 }
 
 .uppercase {
@@ -477,6 +481,8 @@ ul.city li {
   position: absolute;
   z-index: 1;
   animation: bounce 1s;
+  right: 316px;
+  text-transform: uppercase;
 }
 
  /* оживление формы*/
@@ -488,22 +494,13 @@ ul.city li {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-481px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
+    transform: translateY(-365px);
   }
 
   100% {
     transform: translateY(0);
   }
 }
-
 
 @keyframes shake {
   0%,
@@ -579,7 +576,7 @@ ul.city li {
   margin-bottom: 29px;
 }
 
- .input-departures {
+.input-departures {
   margin-bottom: 27px;
 }
 
@@ -996,7 +993,7 @@ form input:focus {
   fill: var(--basic-blue);
 }
 
-.up-down .sort  {
+.up-down .sort {
   fill: var(--basic-blue);
 }
 
@@ -1157,9 +1154,7 @@ ul.hotels .photo {
 }
 
 
-
 /*   footer   */
-
 
 
 .footer {

@@ -10,92 +10,91 @@
     <title>HTML Academy: Седона-поиск отеля</title>
   </head>
 
-  <body>
+<body>
     <div class="container">
 
-    <header>
+      <header>
         <nav class="main-navigation">
-            <ul class="navigation site-navigation">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a>Гостиницы</a></li>
-            </ul>
-            <a href="index.html" class="logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип"></a>
+          <ul class="navigation site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a>Гостиницы</a></li>
+          </ul>
+          <a href="index.html" class="logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип"></a>
         </nav>
-    </header>
+      </header>
 
-    <main class="hotels-catalog">
-           <section> 
-             <h2 class="visually-hidden">Форма сортировки результатов поиска гостиницы</h2> 
-             <form action="https://echo.htmlacademy.ru/" method="get" class="form-sorting">
-
-              <div class="infrastructure-type">
-                 <fieldset>                  
-                  <legend>Инфраструктура:</legend>
-                  <div class="infrastructure-list">                  
-                      <input class="check-box visually-hidden" type="checkbox" name="pool" id="view-pool" checked>                     
-                      <label for="view-pool">Бассейн</label>
-                      <input class="check-box visually-hidden" type="checkbox" name="parking" id="view-parking">                      
-                      <label for="view-parking">Парковка</label>                                         
-                      <input class="check-box visually-hidden" type="checkbox" name="wi-fi" id="view-wf">                     
-                      <label for="view-wf">wi-fi</label>  
-                  </div>                     
-                 </fieldset>
-                 <fieldset>
-                  <legend>Тип жилья:</legend>
-                  <div class="type-list">
-                      <input class=" check-box visually-hidden" type="checkbox" name="hotel" id="view-hotel" checked>
-                      <label for="view-hotel">Гостиница</label>                   
-                      <input class="check-box visually-hidden" type="checkbox" name="motel" id="view-motel" checked>                   
-                      <label for="view-motel">Мотель</label>                     
-                      <input class="check-box visually-hidden" type="checkbox" name="apartments" id="view-apartments" checked>                      
-                      <label for="view-apartments">Апартаменты</label>
-                  </div>               
-                 </fieldset>
-              </div>
+      <main class="hotels-catalog">
+        <section> 
+          <h2 class="visually-hidden">Форма сортировки результатов поиска гостиницы</h2> 
+          <form action="https://echo.htmlacademy.ru/" method="get" class="form-sorting">
+            <div class="infrastructure-type">
+              <fieldset>                  
+                <legend>Инфраструктура:</legend>
+                <div class="infrastructure-list">                  
+                  <input class="check-box visually-hidden" type="checkbox" name="pool" id="view-pool" checked>                     
+                  <label for="view-pool">Бассейн</label>
+                  <input class="check-box visually-hidden" type="checkbox" name="parking" id="view-parking">                      
+                  <label for="view-parking">Парковка</label>                                         
+                  <input class="check-box visually-hidden" type="checkbox" name="wi-fi" id="view-wf">                     
+                  <label for="view-wf">wi-fi</label>  
+                </div>                     
+              </fieldset>
+              <fieldset>
+                <legend>Тип жилья:</legend>
+                <div class="type-list">
+                  <input class=" check-box visually-hidden" type="checkbox" name="hotel" id="view-hotel" checked>
+                  <label for="view-hotel">Гостиница</label>                   
+                  <input class="check-box visually-hidden" type="checkbox" name="motel" id="view-motel" checked>                   
+                  <label for="view-motel">Мотель</label>                     
+                  <input class="check-box visually-hidden" type="checkbox" name="apartments" id="view-apartments" checked>                      
+                  <label for="view-apartments">Апартаменты</label>
+                </div>               
+              </fieldset>
+            </div>
                  
-                 <fieldset class="cost">                 
-                    <legend>Стоимость в сутки (p):</legend> 
-                    <div class="min-max">
-                      <label class="min"><input type="text" name="min" value="от 0"></label>
-                      <label class="max"><input type="text" name="max" value="до 3000"></label>
-                    </div> 
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <button type="button" class="toggle toggle-min" tabindex="0"></button>
-                      <button type="button" class="toggle toggle-max" tabindex="0"></button>      
-                      <button type="submit">Показать</button>  
-                    </div>
-                 </fieldset>   
-             </form>
-           </section>
+            <fieldset class="cost">                 
+              <legend>Стоимость в сутки (p):</legend> 
+                <div class="min-max">
+                  <label class="min"><input type="text" name="min" value="от 0"></label>
+                  <label class="max"><input type="text" name="max" value="до 3000"></label>
+                </div> 
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <button type="button" class="toggle toggle-min" tabindex="0"></button>
+                  <button type="button" class="toggle toggle-max" tabindex="0"></button>      
+                  <button type="submit">Показать</button>  
+                </div>
+            </fieldset>   
+          </form>
+        </section>
            
-           <section class="results">
-               <h1 class="visually-hidden">Результаты поиска</h1> 
-               <div class="found">
-                 <p>Найдено: 3</p>
-                 <p>Сортировка:</p>
-                 <ul class="rotation"> 
-                   <li class="sort"><a href="#">По цене</a></li> 
-                   <li><a href="#">По типу</a></li>
-                   <li><a href="#">По рейтингу</a></li> 
-                 </ul>
-                 <div class="up-down">               
-                  <a href="#" class="up"><span class="visually-hidden">снизу</span>
-                   <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+        <section class="results">
+          <h1 class="visually-hidden">Результаты поиска</h1> 
+            <div class="found">
+              <p>Найдено: 3</p>
+              <p>Сортировка:</p>
+              <ul class="rotation"> 
+                <li class="sort"><a href="#">По цене</a></li> 
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li> 
+              </ul>
+              <div class="up-down">               
+                <a href="#" class="up"><span class="visually-hidden">снизу</span>
+                  <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                    <path d="M5.5 0L0 10H11L5.5 0Z"/>
-                   </svg>
-                  </a>
-                  <a href="#" class="down sort"><span class="visually-hidden" >сверху</span>
-                   <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                  </svg>
+                </a>
+                <a href="#" class="down sort"><span class="visually-hidden" >сверху</span>
+                  <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                    <path d="M5.5 10L0 0H11"/>
-                   </svg>
-                  </a>               
-                 </div>
-               </div>
+                  </svg>
+                </a>               
+              </div>
+            </div>
              <ul class="hotels"> 
                 <li>
                   <img src="img/amara.jpg" width="135" height="90" alt="фото Amara Resort & Spa" class="photo">
@@ -163,7 +162,7 @@
                     <span>Рейтинг: 9,2</span>
                   </div>
                 </li>
-              </ul>
+             </ul>
            </section>   
     </main>
 
@@ -211,7 +210,7 @@
         </div>
     </footer>
 
-  </div>
-  </body>
+    </div>
+</body>
 
 </html>
