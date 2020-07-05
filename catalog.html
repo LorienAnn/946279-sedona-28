@@ -5,7 +5,7 @@
     <meta name="keywords" content="Седона, гостиница, отель">
     <meta name="description" content="поиск отеля в городе Седона">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/min-normalize.css" rel="stylesheet" >
     <link href="css/min-style.css" rel="stylesheet" >
     <title>HTML Academy: Седона-поиск отеля</title>
   </head>
@@ -25,8 +25,8 @@
         </nav>
       </header>
 
-      <main class="hotels-catalog">
-        <section> 
+      <main>
+        <section class="hotels-catalog"> 
           <h2 class="visually-hidden">Форма сортировки результатов поиска гостиницы</h2> 
           <form action="https://echo.htmlacademy.ru/" method="get" class="form-sorting">
             <div class="infrastructure-type">
@@ -42,7 +42,7 @@
                 </div>                     
               </fieldset>
               <fieldset>
-                <legend>Тип жилья:</legend>
+                <legend class="house-type">Тип жилья:</legend>
                 <div class="type-list">
                   <input class=" check-box visually-hidden" type="checkbox" name="hotel" id="view-hotel" checked>
                   <label for="view-hotel">Гостиница</label>                   

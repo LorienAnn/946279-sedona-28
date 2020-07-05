@@ -330,7 +330,9 @@ ul.city li {
 .reason-2 {
   background-color: var(--basic-blue); 
   display: flex;
-  flex-direction: row-reverse;                 
+  flex-direction: row-reverse; 
+  position: relative;
+  top: -2px;                
 }
 
  .bridge {
@@ -341,12 +343,6 @@ ul.city li {
   flex-grow: 1;
   padding: 49px;
   box-sizing: border-box;
-}
-
-.bridge h3 {
-  margin: 0;               
-  width: 160px;               
-  height: 43px;
 }
 
 .bridge span {
@@ -365,6 +361,8 @@ ul.city li {
   min-height: 256px;
   list-style: none;
   padding: 0;
+  position: relative;
+  top: -2px;
 }
 
 .reason-345 li:nth-child(3n+1) {
@@ -375,6 +373,8 @@ ul.city li {
   margin-top: 46px;
   margin: auto;
   box-sizing: border-box;
+  position: relative;
+  top: 6px;
 }
 
 .reason-345 li:nth-child(3n+2) {
@@ -385,6 +385,8 @@ ul.city li {
   min-height: 155px;
   margin: auto;
   margin-top: 46px;
+  position: relative;
+  top: 4px;
 }
 
 .reason-345 li:nth-child(3n+3) {
@@ -395,12 +397,15 @@ ul.city li {
   margin-top: 46px;
   min-height: 155px;
   box-sizing: border-box;
+  position: relative;
+  top: 4px;
 }
 
 .reason-345 p {
   width: 265px;
   min-height: 43px;
   margin-top: 25px;
+  line-height: 21px;
 }
 
 .reason-345 p:nth-child(2) {
@@ -425,7 +430,14 @@ ul.city li {
 }
 
 .advantages-list span {
-  margin-top: 25px;
+  margin-top: 28px;
+}
+
+.bridge h3 {
+  margin: 0;               
+  width: 160px;               
+  height: 43px;
+  line-height: 23px;
 }
 
 /* Search form*/
@@ -674,11 +686,11 @@ ul.city li {
   color: var(--opacity-white-light);
 } 
 
-form input:hover {
+.form-hotels input:hover {
   background-color: var(--hover-gray);
 }
 
-form input:focus {
+.form-hotels input:focus {
   background-color: var(--basic-white);
   border: 2px solid #E5E5E5;
 }
@@ -711,8 +723,8 @@ form input:focus {
 
 /*****     catalog       *****/
 
-
 .hotels-catalog {
+  background-color: var(--basic-brown);
   background-image: url(../img/background-blur.jpg);
   background-position: top;
   background-repeat: no-repeat;
@@ -743,6 +755,11 @@ form input:focus {
   font-weight: 700;
 }
 
+.form-sorting .house-type {
+  position: relative;
+  right: 16px;
+}
+
 .infrastructure-type {
   display: flex;
   width: 391px;
@@ -759,16 +776,25 @@ form input:focus {
   padding-left: 27px;
   position: relative;
   margin-right: 137px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   box-sizing: border-box;
 }
+
+.infrastructure-list label:first-of-type {
+  margin-top: -2px;
+}
+
+.type-list label:first-of-type {
+  margin-top: -2px;
+}
+
 
 .type-list {
   margin-right: 100px; 
 }
 
 .infrastructure-type legend {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   right: 13px;
   position: relative;
 }
@@ -816,7 +842,7 @@ form input:focus {
   height: 33px;
   border-radius: 2px;
   border: 2px solid var(--basic-white);
-  top: 5px;  
+  top: 6px;  
 }
 
 .min-max input {
@@ -826,7 +852,7 @@ form input:focus {
   font-size: inherit;
   font-size: 14px;
   line-height: 21px;
-  width: 157px;
+  width: 154px;
   text-transform: uppercase;
   color: var(--basic-white); 
 }
@@ -929,6 +955,11 @@ form input:focus {
   align-items: center;
 }
 
+.found p:nth-child(2) {
+  position: relative;
+  bottom: 2px;
+}
+
 .found p:first-child {
   padding: 0;
   margin-left: 73px;
@@ -941,6 +972,10 @@ form input:focus {
 .rotation {
   list-style: none;    
   display: flex;
+  position: relative;
+  bottom: 2px;
+  padding-left: 0;
+  right: -9px;
 }
 
 .rotation a {
@@ -948,14 +983,12 @@ form input:focus {
   font-size: 12px;
   line-height: 18px;
   border-bottom: 1px dotted var(--basic-blue);
+  display: inline-block;
+  margin-left: 32px;
 }
 
-.rotation li:first-child {  
-  margin-right: 32px;
-}
-
-.rotation li:nth-child(2) {
-  margin-right: 32px;
+.rotation li {
+  display: flex;
 }
  
 .rotation a:focus {
@@ -1062,8 +1095,8 @@ form input:focus {
 .star-rating img {
   margin-left: 5px;
   position: relative;
-    right: -2px;
-    top: -1px;
+  right: -2px;
+  top: -1px;
 }
 
 .stars span:last-child {
@@ -1102,7 +1135,7 @@ form input:focus {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  width: 126px;
+  width: 115px;
   margin-top: 2px;
 }
 
@@ -1150,8 +1183,8 @@ ul.hotels .photo {
   border: none;
   width: 142px;
   height: 27px;
-  padding-right: 16px;
-  padding-top: 3px;
+  padding-right: 17px;
+  padding-top: 4px;
   padding-bottom: 3px;
   padding-left: 17px;
   margin-left: 6px;
