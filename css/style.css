@@ -592,7 +592,7 @@ ul.city li {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 0;
+  margin-top: 2px;
   display: flex;
   align-items: center;
 }
@@ -624,6 +624,7 @@ ul.city li {
 
 .adult {
   margin-right: 38px;
+  margin-top: 4px;
 }
 
 .people input {
@@ -659,6 +660,7 @@ ul.city li {
 .child-label {
   margin-left: 50px;
   margin-right: 32px;
+  margin-top: 4px;
 }
 
 .button-brown {
@@ -1218,7 +1220,7 @@ ul.hotels .photo {
 
 .footer-index {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 }
 
 .footer a {
