@@ -997,6 +997,7 @@ ul.city li {
   border-bottom: 1px dotted var(--basic-blue);
   display: inline-block;
   margin-left: 32px;
+  vertical-align: top;
 }
 
 .rotation li {
